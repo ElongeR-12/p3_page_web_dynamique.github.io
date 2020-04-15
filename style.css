@@ -1,0 +1,141 @@
+body {
+    max-width: 1500px;
+    margin: auto;
+}
+
+menu {
+    height: 245px;
+    background-color: #669999;
+}
+
+main {
+    margin: 100px 100px 90px 100px;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    margin:0;
+    overflow: hidden;
+}
+
+.box {
+    height: 765px;
+    width: 492px;
+    max-width: 100%; 
+    overflow: hidden;
+    margin: 40px 40px;
+    background-color: #ffcccc;
+    display: inline-block;
+}
+
+.box_container {
+    float: left;
+    margin-bottom: 50px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.box_share {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+button {
+    width: 656px;
+    height: 118px;
+    background-color: #669999;
+    max-width: 100%;
+    border-style: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+button:hover{
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    cursor: pointer;
+}
+footer {
+    height: 138px;
+    background-color: #669999;
+}
+
+
+
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+
+    .box {
+        margin: 10px 10px;
+        width: 415px;
+        height: 643px;  
+    }
+
+    main {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    button {
+        width: 551px;
+        height: 99px;
+    }
+ }
+
+ /* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+    .box {
+        width: 328px;
+        height: 512px;  
+    }
+
+    main {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    button {
+        width: 439px;
+        height: 79px;
+    }
+ }
+
+ /* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .box {
+        width: 242px;
+        height: 375px;  
+    }
+
+    main {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    button {
+        width: 321px;
+        height: 58px;
+    }
+ }
+
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+   
+    .box {
+        width: 328px;
+        height: 512px;  
+    }
+
+    button {
+        max-width: 70%;
+    }
+}
