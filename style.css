@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Pacifico&family=Parisienne&display=swap');
+
 body {
     max-width: 1500px;
     margin: auto;
@@ -33,6 +35,8 @@ main {
     -moz-transition: transform 1.5s;
     -ms-transition: transform 1.5s;
     -o-transition: transform 1.5s;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
 .box:hover {
@@ -43,22 +47,26 @@ main {
     -o-transform: scale(1.1);
     cursor: pointer;
 }
+
+
 .box_color1 {
     background-color: #ffcccc;
+    font-family: 'Pacifico', cursive;
 }
 
 .box_color2 {
     background-color: #f5d9d961;
-    
+    font-family: 'Lobster', cursive;
 }
 
 .box_color3 {
     background-color: #a39f9f1f;
-    
+    font-family: 'Dancing Script', cursive;
 }
 
 .box_color4 {
     background-color: #a39f9f08;
+    font-family: 'Parisienne', cursive;
 }
 
 .box_container {
@@ -73,7 +81,46 @@ main {
     top:45%;
     left: 40%;
 }
+.box_info .fa-music {
+    background: linear-gradient(to right, #ff6666 0%, #ff9966 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 
+.box_info .info_1, .box_info .menu_1 {
+    color: #330000;
+}
+
+.box_info .info_2 {
+    background: linear-gradient(to right, #cc9933 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.box_info .menu_2 {
+    color: #cc9933 ;
+}
+
+.box_info .info_3 {
+    background: linear-gradient(to right, #0033cc 0%, #99ccff 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.box_info .menu_3 {
+    color: #99ccff ;
+	
+}
+
+.box_info .info_4 {
+    background: linear-gradient(to right, #339933 0%, #ccff66 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.box_info .menu_4 {
+    color: #339933;
+}
 
 button {
     width: 656px;
