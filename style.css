@@ -394,3 +394,15 @@ footer div button:last-child a {
         display: none;
     }
 }
+
+/* 
+La note enchantée
+*/
+
+main div.menu_1_container h2 {
+    font-family: sans-serif;
+    text-transform: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
