@@ -5,7 +5,7 @@ body {
     margin:auto;
 }
 
-menu {
+header div {
     height: 245px;
     background-color: #669999;
     overflow: hidden;
@@ -247,13 +247,13 @@ footer {
     background-color: #669999;
 }
 
-footer div {
+footer div.footer_container {
     width: 100%;
     overflow: hidden;
     padding-top: 5vh;
 }
 
-footer div button:first-child {
+footer div.footer_container div:first-child {
     float: left;
     width: 50%;
     padding-left: 0;
@@ -261,7 +261,7 @@ footer div button:first-child {
     border: none;
 } 
 
-footer div button:last-child {
+footer div.footer_container div:last-child {
     float: right;
     width: 50%;
     padding-right: 0;
@@ -269,9 +269,9 @@ footer div button:last-child {
     border: none;
 }
 
-footer div button a {
+footer div.footer_container div a {
     color: #ffcc33;
-    font-style: none;
+    font-style: normal;
     text-decoration: none;
     font-size: 4vw;
     font-weight: bold;
@@ -289,15 +289,15 @@ footer div button a {
     -o-transition: 2s;
 }
 
-footer div button a:hover {
+footer div.footer_container div a:hover {
     background-color: blue;
 }
 
-footer div button:first-child a {
+footer div.footer_container div:first-child a {
     float: left;
     padding-left: 30px;
 }
-footer div button:last-child a {
+footer div.footer_container div:last-child a {
     float: right;
     padding-right: 30px;
 }
