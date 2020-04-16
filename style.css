@@ -2,12 +2,48 @@
 
 body {
     max-width: 1500px;
-    margin: auto;
+    margin:auto;
 }
 
 menu {
     height: 245px;
     background-color: #669999;
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding-left: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffcc33;
+}
+
+nav {
+    font-size: 70px;
+    font-weight: 600;
+    margin-top: 12vh;
+    margin-bottom: 12vh;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffcc33;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+}
+
+nav a:hover {
+    background-color: rgb(207, 216, 216);
 }
 
 main {
@@ -214,7 +250,7 @@ footer {
 footer div {
     width: 100%;
     overflow: hidden;
-    padding: 44px 0;
+    padding-top: 5vh;
 }
 
 footer div button:first-child {
