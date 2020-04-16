@@ -47,6 +47,12 @@ nav a:hover {
 }
 
 main {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+main div.home_area {
     margin: 100px 100px 90px 100px;
 }
 
@@ -302,6 +308,51 @@ footer div.footer_container div:last-child a {
     padding-right: 30px;
 }
 
+/*  La note enchantée*/
+
+main div.menu_1_container h2, main div.menu_2_container h2, main div.menu_3_container h2, main div.menu_4_container h2, main div.mentions_container h2 {
+    font-family: sans-serif;
+    text-transform: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+main div.menu_1_container {
+    max-width: 1190px;
+    padding: 80px 125px 105px 125px;
+    
+}
+
+.menu_area .item_1, .menu_area .item_2, .menu_area .item_3, .menu_area .dessert {
+    width: 100%;
+    overflow: hidden;
+}
+h3 {
+    text-align: center;
+}
+.menu_title, .below_title {
+    text-align: center;
+}
+.menu_info div{
+   width: 100%;
+    }
+
+
+.menu_info div div:first-child {
+    width: 80%;
+    float: left;
+}
+
+.menu_info div div:last-child {
+    width: 20%;
+    float: right;
+}
+
+.menu_info div div:last-child p {
+    text-align: end;
+}
+
 /* Large devices (desktops, less than 1200px)*/
 @media (max-width: 1199.98px) {
 
@@ -316,7 +367,7 @@ footer div.footer_container div:last-child a {
         left: 33%;
     }
 
-    main {
+    main div.home_area {
         margin-left: 50px;
         margin-right: 50px;
     }
@@ -339,7 +390,7 @@ footer div.footer_container div:last-child a {
         left: 25.78%;
     }
 
-    main {
+    main div.home_area {
         margin-left: 25px;
         margin-right: 25px;
     }
@@ -362,7 +413,7 @@ footer div.footer_container div:last-child a {
         left: 12.67%;
     }
 
-    main {
+    main div.home_area{
         margin-left: 5px;
         margin-right: 5px;
     }
@@ -370,6 +421,10 @@ footer div.footer_container div:last-child a {
     div.container > button {
         width: 321px;
         height: 58px;
+    }
+    main div.menu_1_container {
+        padding-right: 40px;
+        padding-left: 40px;
     }
  }
 
@@ -393,16 +448,12 @@ footer div.footer_container div:last-child a {
     .wrapper {
         display: none;
     }
+
+    main div.menu_1_container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 }
 
-/* 
-La note enchantée
-*/
 
-main div.menu_1_container h2, main div.menu_2_container h2, main div.menu_3_container h2, main div.menu_4_container h2, main div.mentions_container h2 {
-    font-family: sans-serif;
-    text-transform: none;
-    text-align: center;
-    font-weight: bold;
-    font-size: 40px;
-}
+
