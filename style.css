@@ -399,7 +399,7 @@ footer div.footer_container div:last-child a {
 La note enchantée
 */
 
-main div.menu_1_container h2 {
+main div.menu_1_container h2, main div.menu_2_container h2, main div.menu_3_container h2, main div.menu_4_container h2, main div.mentions_container h2 {
     font-family: sans-serif;
     text-transform: none;
     text-align: center;
