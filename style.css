@@ -82,11 +82,6 @@ main div.home_area {
 }
 
 .box:hover {
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -122,7 +117,23 @@ main div.home_area {
     position: absolute;
     top:45%;
     left: 40%;
+    opacity: 1;
+    transition: 1.3s;
+    -webkit-transition: 1.3s;
+    -moz-transition: 1.3s;
+    -ms-transition: 1.3s;
+    -o-transition: 1.3s;
 }
+
+.box_info:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    opacity: 0.4;
+}
+
 .box_info .fa-music {
     background: linear-gradient(to right, #ff6666 0%, #ff9966 100%);
 	-webkit-background-clip: text;
@@ -176,7 +187,7 @@ main div.home_area {
     height: 40px;
     width: 40px;
     margin-bottom: 10px;
-    background-color: cornflowerblue;
+    background-color: #99cbfff7;
   }
     .circle-1 {
       animation: move 1s ease-in-out infinite;
@@ -288,16 +299,9 @@ footer div.footer_container div a {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    transition: 2s;
-    -webkit-transition: 2s;
-    -moz-transition: 2s;
-    -ms-transition: 2s;
-    -o-transition: 2s;
 }
 
-footer div.footer_container div a:hover {
-    background-color: blue;
-}
+
 
 footer div.footer_container div:first-child a {
     float: left;
@@ -308,6 +312,26 @@ footer div.footer_container div:last-child a {
     padding-right: 30px;
 }
 
+.wiggle {
+    animation: wiggle 200ms infinite;
+    animation-timing-function: linear;
+    -webkit-animation: wiggle 200ms infinite;
+    transition: 1.5s;
+    -webkit-transition: 1.5s;
+    -moz-transition: 1.5s;
+    -ms-transition: 1.5s;
+    -o-transition: 1.5s;
+}
+.wiggle:hover {
+    animation: none;
+    background: rgb(207, 216, 216);
+  }
+
+  @keyframes wiggle {
+    0% { transform: translate(2px, 0); }
+    50% { transform: translate(-2px, 0); }
+    100% { transform: translate(2px, 0); }
+  }
 /*  La note enchantée*/
 
 main div.menu_container h2, main div.menu_container h2, main div.menu_container h2, main div.menu_container h2, main div.mentions_container h2 {
