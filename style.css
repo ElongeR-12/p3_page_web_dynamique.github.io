@@ -13,6 +13,7 @@ header div {
     text-align: center;
     margin: 0;
     padding-left: 0;
+    font-family: sans-serif;
 }
 
 nav a {
@@ -89,21 +90,25 @@ main div.home_area {
 .box_color1 {
     background-color: #ffcccc;
     font-family: 'Pacifico', cursive;
+    font-size: 3vw;
 }
 
 .box_color2 {
     background-color: #f5d9d961;
     font-family: 'Lobster', cursive;
+    font-size: 3vw;
 }
 
 .box_color3 {
     background-color: #a39f9f1f;
     font-family: 'Dancing Script', cursive;
+    font-size: 3vw;
 }
 
 .box_color4 {
     background-color: #a39f9f08;
     font-family: 'Parisienne', cursive;
+    font-size: 3vw;
 }
 
 .box_container {
@@ -115,8 +120,8 @@ main div.home_area {
 
 .box_info {
     position: absolute;
-    top:45%;
-    left: 40%;
+    top:40%;
+    left: 18%;
     opacity: 1;
     transition: 1.3s;
     -webkit-transition: 1.3s;
@@ -221,7 +226,6 @@ main div.home_area {
 
   h2 {
     color: #222;
-    font-size: 15px;
     font-weight: 400;
     letter-spacing: 0.05em;
     margin: 40px auto;
@@ -262,6 +266,7 @@ div.container > button:hover{
 footer {
     height: 138px;
     background-color: #669999;
+    font-family: sans-serif;
 }
 
 footer div.footer_container {
@@ -409,8 +414,8 @@ h3 {
     }
 
     .box_info {
-        top:37.8%;
-        left: 33%;
+        top:33.6%;
+        left: 14.8%;
     }
 
     main div.home_area {
@@ -432,8 +437,8 @@ h3 {
     }
 
     .box_info {
-        top:30%;
-        left: 25.78%;
+        top:27.8%;
+        left: 11.6%;
     }
 
     main div.home_area {
@@ -455,8 +460,8 @@ h3 {
     }
 
     .box_info {
-        top:22%;
-        left: 12.67%;
+        top:28%;
+        left: 16%;
     }
 
     main div.home_area{
@@ -483,8 +488,8 @@ h3 {
     }
 
     .box_info {
-        top:30%;
-        left: 25.78%;
+        top: 40%;
+        left: 30%;
     }
 
     div.container > button {
