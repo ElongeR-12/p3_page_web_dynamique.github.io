@@ -309,8 +309,16 @@ footer div.footer_container div:last-child a {
 }
 
 /*  La note enchantée*/
+.item_1 div:first-child {
+    float: left;
+}
 
-main div.menu_1_container h2, main div.menu_2_container h2, main div.menu_3_container h2, main div.menu_4_container h2, main div.mentions_container h2 {
+.item_1 div:first-child hr, .item_1 div:first-child h3 {
+    display: inline-block;
+}
+
+
+main div.menu_container h2, main div.menu_container h2, main div.menu_container h2, main div.menu_container h2, main div.mentions_container h2 {
     font-family: sans-serif;
     text-transform: none;
     text-align: center;
@@ -318,10 +326,11 @@ main div.menu_1_container h2, main div.menu_2_container h2, main div.menu_3_cont
     font-size: 40px;
 }
 
-main div.menu_1_container {
-    max-width: 1190px;
+main div.menu_container {
+    max-width: 946px;
     padding: 80px 125px 105px 125px;
-    
+    margin-left: auto;
+    margin-right: auto;    
 }
 
 .menu_area .item_1, .menu_area .item_2, .menu_area .item_3, .menu_area .dessert {
@@ -422,7 +431,7 @@ h3 {
         width: 321px;
         height: 58px;
     }
-    main div.menu_1_container {
+    main div.menu_container {
         padding-right: 40px;
         padding-left: 40px;
     }
@@ -449,7 +458,7 @@ h3 {
         display: none;
     }
 
-    main div.menu_1_container {
+    main div.menu_container {
         padding-right: 20px;
         padding-left: 20px;
     }
