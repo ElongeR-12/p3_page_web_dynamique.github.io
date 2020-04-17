@@ -309,14 +309,6 @@ footer div.footer_container div:last-child a {
 }
 
 /*  La note enchantée*/
-.item_1 div:first-child {
-    float: left;
-}
-
-.item_1 div:first-child hr, .item_1 div:first-child h3 {
-    display: inline-block;
-}
-
 
 main div.menu_container h2, main div.menu_container h2, main div.menu_container h2, main div.menu_container h2, main div.mentions_container h2 {
     font-family: sans-serif;
@@ -361,6 +353,27 @@ h3 {
 .menu_info div div:last-child p {
     text-align: end;
 }
+
+.divider {
+	width:100%;
+	text-align:center;
+}
+
+.divider hr {
+	margin-left:auto;
+	margin-right:auto;
+	width:35%;
+
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
 
 /* Large devices (desktops, less than 1200px)*/
 @media (max-width: 1199.98px) {
