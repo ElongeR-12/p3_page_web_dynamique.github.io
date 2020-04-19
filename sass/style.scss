@@ -1,21 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Pacifico&family=Parisienne&display=swap');
 
+@import "./fram_sass/mixins.scss";
+
+%wrapp {
+    width                                             : 100%;
+    margin                                            : 0;
+    overflow                                          : hidden;
+}
 
 body {
     max-width                                         : 1500px;
     margin                                            : auto;
-
+    font-family                                       : sans-serif;
 }
 
 header div {
+    @extend %wrapp;
     height                                            : 245px;
     background-color                                  : #669999;
-    overflow                                          : hidden;
-    width                                             : 100%;
     text-align                                        : center;
-    margin                                            : 0;
     padding-left                                      : 0;
-    font-family                                       : sans-serif;
 
     nav {
         font-size                                     : 70px;
@@ -25,20 +29,11 @@ header div {
 
         a {
             text-decoration                           : none;
-            color                                     : #ffcc33;
-            border-radius                             : 5px;
-            -webkit-border-radius                     : 5px;
-            -moz-border-radius                        : 5px;
-            -ms-border-radius                         : 5px;
-            -o-border-radius                          : 5px;
-            transition                                : 1.5s;
-            -webkit-transition                        : 1.5s;
-            -moz-transition                           : 1.5s;
-            -ms-transition                            : 1.5s;
-            -o-transition                             : 1.5s;
+            @include link;
+            @include transition;
 
             &:hover {
-                color: invert($color: #000000);
+                color                                 : invert($color: #000000);
             }
         }
     }
@@ -46,9 +41,7 @@ header div {
 
 
 main {
-    width                                             : 100%;
-    overflow                                          : hidden;
-    margin                                            : 0;
+    @extend %wrapp;
 
     .home_area {
         margin                                        : 100px 100px 90px 100px;
@@ -73,9 +66,7 @@ main {
 
             .box_container {
                 text-align                            : center;
-                width                                 : 100%;
-                margin                                : 0;
-                overflow                              : hidden;
+                @extend %wrapp;
 
                 .box {
                     height                            : 765px;
@@ -86,11 +77,6 @@ main {
                     display                           : inline-block;
                     border                            : 4px solid #a39f9f17;
                     position                          : relative;
-                    transition                        : transform 1.5s;
-                    -webkit-transition                : transform 1.5s;
-                    -moz-transition                   : transform 1.5s;
-                    -ms-transition                    : transform 1.5s;
-                    -o-transition                     : transform 1.5s;
                     font-size                         : 20px;
                     font-weight                       : bolder;
 
@@ -121,42 +107,24 @@ main {
                 }
 
                 .box_color1 {
-                    background-color                  : #ffcccc;
                     font-family                       : 'Pacifico', cursive;
-                    font-size                         : 3vw;
+                    @include police_menu ($bck        : #ffcccc);
 
                     .box_info {
-                        position                      : absolute;
-                        top                           : 40%;
-                        left                          : 18%;
-                        opacity                       : 1;
-                        transition                    : 1.3s;
-                        -webkit-transition            : 1.3s;
-                        -moz-transition               : 1.3s;
-                        -ms-transition                : 1.3s;
-                        -o-transition                 : 1.3s;
+                        @include info_position;
+                        @include transition ($time    : 1.3s);
 
                         &:hover {
-                            transform                 : scale(1.2);
-                            -webkit-transform         : scale(1.2);
-                            -moz-transform            : scale(1.2);
-                            -ms-transform             : scale(1.2);
-                            -o-transform              : scale(1.2);
+                            @include transform;
                             opacity                   : 0.4;
                         }
 
                         h2 {
-                            color                     : #222;
-                            font-weight               : 400;
-                            letter-spacing            : 0.05em;
-                            margin                    : 40px auto;
-                            text-transform            : uppercase;
+                            @include second_head;
                         }
 
                         .fa-music {
-                            background                : linear-gradient(to right, #ff6666 0%, #ff9966 100%);
-                            -webkit-background-clip   : text;
-                            -webkit-text-fill-color   : transparent;
+                            @include info_style ($lc  : #ff6666, $rc: #ff9966);
                         }
 
                         .info_1,
@@ -187,42 +155,24 @@ main {
                 }
 
                 .box_color2 {
-                    background-color                  : #f5d9d961;
                     font-family                       : 'Lobster', cursive;
-                    font-size                         : 3vw;
+                    @include police_menu ($bck        : #f5d9d961);
 
                     .box_info {
-                        position                      : absolute;
-                        top                           : 40%;
-                        left                          : 18%;
-                        opacity                       : 1;
-                        transition                    : 1.3s;
-                        -webkit-transition            : 1.3s;
-                        -moz-transition               : 1.3s;
-                        -ms-transition                : 1.3s;
-                        -o-transition                 : 1.3s;
+                        @include info_position;
+                        @include transition ($time    : 1.3s);
 
                         &:hover {
-                            transform                 : scale(1.2);
-                            -webkit-transform         : scale(1.2);
-                            -moz-transform            : scale(1.2);
-                            -ms-transform             : scale(1.2);
-                            -o-transform              : scale(1.2);
+                            @include transform;
                             opacity                   : 0.4;
                         }
 
                         h2 {
-                            color                     : #222;
-                            font-weight               : 400;
-                            letter-spacing            : 0.05em;
-                            margin                    : 40px auto;
-                            text-transform            : uppercase;
+                            @include second_head;
                         }
 
                         .info_2 {
-                            background                : linear-gradient(to right, #cc9933 0%, #330867 100%);
-                            -webkit-background-clip   : text;
-                            -webkit-text-fill-color   : transparent;
+                            @include info_style ($lc  : #cc9933, $rc: #330867);
                         }
 
                         .menu_2 {
@@ -253,42 +203,24 @@ main {
                 }
 
                 .box_color3 {
-                    background-color                  : #a39f9f1f;
                     font-family                       : 'Dancing Script', cursive;
-                    font-size                         : 3vw;
+                    @include police_menu ($bck        : #a39f9f1f);
 
                     .box_info {
-                        position                      : absolute;
-                        top                           : 40%;
-                        left                          : 18%;
-                        opacity                       : 1;
-                        transition                    : 1.3s;
-                        -webkit-transition            : 1.3s;
-                        -moz-transition               : 1.3s;
-                        -ms-transition                : 1.3s;
-                        -o-transition                 : 1.3s;
+                        @include info_position;
+                        @include transition ($time    : 1.3s);
 
                         &:hover {
-                            transform                 : scale(1.2);
-                            -webkit-transform         : scale(1.2);
-                            -moz-transform            : scale(1.2);
-                            -ms-transform             : scale(1.2);
-                            -o-transform              : scale(1.2);
+                            @include transform;
                             opacity                   : 0.4;
                         }
 
                         h2 {
-                            color                     : #222;
-                            font-weight               : 400;
-                            letter-spacing            : 0.05em;
-                            margin                    : 40px auto;
-                            text-transform            : uppercase;
+                            @include second_head;
                         }
 
                         .info_3 {
-                            background                : linear-gradient(to right, #0033cc 0%, #99ccff 100%);
-                            -webkit-background-clip   : text;
-                            -webkit-text-fill-color   : transparent;
+                            @include info_style ($lc  : #0033cc, $rc: #99ccff);
                         }
 
                         .menu_3 {
@@ -319,42 +251,24 @@ main {
                 }
 
                 .box_color4 {
-                    background-color                  : #a39f9f08;
                     font-family                       : 'Parisienne', cursive;
-                    font-size                         : 3vw;
+                    @include police_menu ($bck        : #a39f9f08);
 
                     .box_info {
-                        position                      : absolute;
-                        top                           : 40%;
-                        left                          : 18%;
-                        opacity                       : 1;
-                        transition                    : 1.3s;
-                        -webkit-transition            : 1.3s;
-                        -moz-transition               : 1.3s;
-                        -ms-transition                : 1.3s;
-                        -o-transition                 : 1.3s;
+                        @include info_position;
+                        @include transition ($time    : 1.3s);
 
                         &:hover {
-                            transform                 : scale(1.2);
-                            -webkit-transform         : scale(1.2);
-                            -moz-transform            : scale(1.2);
-                            -ms-transform             : scale(1.2);
-                            -o-transform              : scale(1.2);
+                            @include transform;
                             opacity                   : 0.4;
                         }
 
                         h2 {
-                            color                     : #222;
-                            font-weight               : 400;
-                            letter-spacing            : 0.05em;
-                            margin                    : 40px auto;
-                            text-transform            : uppercase;
+                            @include second_head;
                         }
 
                         .info_4 {
-                            background                : linear-gradient(to right, #339933 0%, #ccff66 100%);
-                            -webkit-background-clip   : text;
-                            -webkit-text-fill-color   : transparent;
+                            @include info_style;
                         }
 
                         .menu_4 {
@@ -412,28 +326,16 @@ main {
                 background-color                      : #669999;
                 max-width                             : 100%;
                 border                                : none;
-                border-radius                         : 20px;
-                -webkit-border-radius                 : 20px;
-                -moz-border-radius                    : 20px;
-                -ms-border-radius                     : 20px;
-                -o-border-radius                      : 20px;
+                @include link($size                   : 20px);
                 font-size                             : 3.5vw;
                 font-weight                           : bold;
-                color                                 : #ffcc33;
                 transition                            : 1.5s;
-                -webkit-transition                    : 1.5s;
-                -moz-transition                       : 1.5s;
-                -ms-transition                        : 1.5s;
-                -o-transition                         : 1.5s;
+                @include transition;
 
                 &:hover {
-                    transform                         : scale(1.01);
-                    -webkit-transform                 : scale(1.01);
-                    -moz-transform                    : scale(1.01);
-                    -ms-transform                     : scale(1.01);
-                    -o-transform                      : scale(1.01);
+                    @include transform ($zoom         : 1.01);
                     cursor                            : pointer;
-                    color: invert($color: #000000);
+                    color                             : invert($color: #000000);
                     border                            : none;
                 }
 
@@ -520,11 +422,9 @@ main {
 footer {
     height                                            : 138px;
     background-color                                  : #669999;
-    font-family                                       : sans-serif;
 
     .footer_container {
-        width                                         : 100%;
-        overflow                                      : hidden;
+        @extend %wrapp;
         padding-top                                   : 5vh;
 
         div:first-child {
@@ -535,20 +435,11 @@ footer {
             border                                    : none;
 
             a {
-                color                                 : #ffcc33;
-                font-style                            : normal;
-                text-decoration                       : none;
-                font-size                             : 4vw;
-                font-weight                           : bold;
-                float                                 : left;
-                padding-left                          : 30px;
-                border-radius                         : 5px;
-                -webkit-border-radius                 : 5px;
-                -moz-border-radius                    : 5px;
-                -ms-border-radius                     : 5px;
-                -o-border-radius                      : 5px;
+                @include link;
+                @include link_spec;
+
                 &:hover {
-                    color: invert($color: #000000);
+                    color                             : invert($color: #000000);
                 }
             }
         }
@@ -561,20 +452,11 @@ footer {
             border                                    : none;
 
             a {
-                color                                 : #ffcc33;
-                font-style                            : normal;
-                text-decoration                       : none;
-                font-size                             : 4vw;
-                font-weight                           : bold;
-                float                                 : right;
-                padding-right                         : 30px;
-                border-radius                         : 5px;
-                -webkit-border-radius                 : 5px;
-                -moz-border-radius                    : 5px;
-                -ms-border-radius                     : 5px;
-                -o-border-radius                      : 5px;
+                @include link;
+                @include link_spec;
+
                 &:hover {
-                    color: invert($color: #000000);
+                    color                             : invert($color: #000000);
                 }
             }
         }
@@ -582,14 +464,8 @@ footer {
 }
 
 .wiggle {
-    animation                                         : wiggle 200ms infinite;
-    animation-timing-function                         : linear;
-    -webkit-animation                                 : wiggle 200ms infinite;
-    transition                                        : 1.5s;
-    -webkit-transition                                : 1.5s;
-    -moz-transition                                   : 1.5s;
-    -ms-transition                                    : 1.5s;
-    -o-transition                                     : 1.5s;
+    @include animation;
+    @include transition;
 }
 
 .wiggle:hover {

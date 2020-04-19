@@ -1,0 +1,66 @@
+@mixin  link ($size:5){
+    color                                     : #ffcc33;
+    border-radius                             : 5px;
+    -webkit-border-radius                     : 5px;
+    -moz-border-radius                        : 5px;
+    -ms-border-radius                         : 5px;
+    -o-border-radius                          : 5px;
+}
+
+@mixin  transition ($time: 1.5s){
+    transition: $time;
+    -webkit-transition: $time;
+    -moz-transition: $time;
+    -ms-transition: $time;
+    -o-transition: $time;
+}
+
+@mixin transform ($zoom: 1.2) {
+    transform: scale($zoom);
+    -webkit-transform: scale($zoom);
+    -moz-transform: scale($zoom);
+    -ms-transform: scale($zoom);
+    -o-transform: scale($zoom);
+}
+
+@mixin  animation {
+        animation                                         : wiggle 200ms infinite;
+        animation-timing-function                         : linear;
+        -webkit-animation                                 : wiggle 200ms infinite;
+    
+}
+
+@mixin police_menu ($bck: #f5d9d961, $fs: 3vw){
+    background-color                  : $bck;
+    font-size                         : $fs;
+}
+
+@mixin info_position {
+    position                      : absolute;
+    top                           : 40%;
+    left                          : 18%;
+    opacity                       : 1;
+}
+
+@mixin  second_head {
+    color                     : #222;
+    font-weight               : 400;
+    letter-spacing            : 0.05em;
+    margin                    : 40px auto;
+    text-transform            : uppercase;
+}
+
+@mixin info_style ($lc:#339933, $rc: #ccff66){
+    background                : linear-gradient(to right, $lc 0%, $rc 100%);
+    -webkit-background-clip   : text;
+    -webkit-text-fill-color   : transparent;   
+}
+
+@mixin link_spec {
+    font-style                            : normal;
+    text-decoration                       : none;
+    font-size                             : 4vw;
+    font-weight                           : bold;
+    float                                 : left;
+    padding-left                          : 30px;
+}
