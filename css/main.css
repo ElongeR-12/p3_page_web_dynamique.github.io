@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Pacifico&family=Parisienne&display=swap");
-header div, main, main .home_area .container .box_container, footer .footer_container {
+header div, main, main .home_area .container .box_container {
   width: 100%;
   margin: 0;
   overflow: hidden; }
@@ -377,6 +377,8 @@ footer {
   height: 138px;
   background-color: #669999; }
   footer .footer_container {
+    width: 100%;
+    overflow: hidden;
     padding-top: 5vh; }
     footer .footer_container div:first-child {
       float: left;
@@ -416,8 +418,8 @@ footer {
         text-decoration: none;
         font-size: 4vw;
         font-weight: bold;
-        float: left;
-        padding-left: 30px; }
+        float: right;
+        padding-right: 30px; }
         footer .footer_container div:last-child a:hover {
           color: white; }
 
@@ -446,7 +448,7 @@ main div.menu_container {
   padding: 80px 125px 105px 125px;
   margin-left: auto;
   margin-right: auto; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 991.98px) {
     main div.menu_container {
       padding-right: 40px;
       padding-left: 40px; } }
@@ -460,9 +462,36 @@ main div.menu_container {
     text-align: center;
     font-weight: bold;
     font-size: 40px; }
+  main div.menu_container .menu_area {
+    padding: 5.5rem 7.8rem 6.25rem 7.8rem;
+    background-color: #ffcccc; }
+    @media (max-width: 767.98px) {
+      main div.menu_container .menu_area {
+        padding-left: 2rem;
+        padding-right: 2rem; } }
+    @media (max-width: 575.98px) {
+      main div.menu_container .menu_area {
+        font-size: small; } }
+    main div.menu_container .menu_area > div {
+      margin-bottom: 5rem; }
+    main div.menu_container .menu_area .menu_title, main div.menu_container .menu_area .below_title {
+      font-size: 2rem; }
+  main div.menu_container .note_ench {
+    font-family: 'Pacifico', cursive; }
+    main div.menu_container .note_ench .menu_title .fa-music {
+      background: linear-gradient(to right, #ff6666 0%, #ff9966 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 3rem; }
   main div.menu_container .menu_title,
   main div.menu_container .below_title {
     text-align: center; }
+  main div.menu_container .below_title .fas, main div.menu_container .below_title .info_1 {
+    display: inline; }
+  main div.menu_container .below_title .fas {
+    background: linear-gradient(to right, #ff6666 0%, #ff9966 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
   main div.menu_container .menu_area .item_1,
   main div.menu_container .menu_area .item_2,
   main div.menu_container .menu_area .item_3,
@@ -496,14 +525,29 @@ main div.menu_container {
     main div.menu_container .menu_area .item_3 .divider,
     main div.menu_container .menu_area .dessert .divider {
       width: 100%;
-      text-align: center; }
-      main div.menu_container .menu_area .item_1 .divider hr,
-      main div.menu_container .menu_area .item_2 .divider hr,
-      main div.menu_container .menu_area .item_3 .divider hr,
-      main div.menu_container .menu_area .dessert .divider hr {
+      text-align: center;
+      font-size: x-large; }
+      @media (max-width: 575.98px) {
+        main div.menu_container .menu_area .item_1 .divider,
+        main div.menu_container .menu_area .item_2 .divider,
+        main div.menu_container .menu_area .item_3 .divider,
+        main div.menu_container .menu_area .dessert .divider {
+          font-size: medium; } }
+      main div.menu_container .menu_area .item_1 .divider:hover hr,
+      main div.menu_container .menu_area .item_2 .divider:hover hr,
+      main div.menu_container .menu_area .item_3 .divider:hover hr,
+      main div.menu_container .menu_area .dessert .divider:hover hr {
         margin-left: auto;
         margin-right: auto;
-        width: 35%; }
+        width: 28%;
+        box-shadow: 1px 0 2px 1px #330000;
+        color: #330000; }
+        @media (max-width: 575.98px) {
+          main div.menu_container .menu_area .item_1 .divider:hover hr,
+          main div.menu_container .menu_area .item_2 .divider:hover hr,
+          main div.menu_container .menu_area .item_3 .divider:hover hr,
+          main div.menu_container .menu_area .dessert .divider:hover hr {
+            width: 20%; } }
       main div.menu_container .menu_area .item_1 .divider .left,
       main div.menu_container .menu_area .item_2 .divider .left,
       main div.menu_container .menu_area .item_3 .divider .left,

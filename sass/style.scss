@@ -424,7 +424,8 @@ footer {
     background-color                                  : #669999;
 
     .footer_container {
-        @extend %wrapp;
+        width                                         : 100%;
+        overflow                                      : hidden;
         padding-top                                   : 5vh;
 
         div:first-child {
@@ -437,6 +438,8 @@ footer {
             a {
                 @include link;
                 @include link_spec;
+                float: left;
+                padding-left                          : 30px;
 
                 &:hover {
                     color                             : invert($color: #000000);
@@ -454,6 +457,8 @@ footer {
             a {
                 @include link;
                 @include link_spec;
+                float: right;
+                padding-right                          : 30px;
 
                 &:hover {
                     color                             : invert($color: #000000);
@@ -493,7 +498,7 @@ main div.menu_container {
     margin-left                                       : auto;
     margin-right                                      : auto;
 
-    @media (max-width: 767.98px) {
+    @media (max-width: 991.98px) {
         padding-right                                 : 40px;
         padding-left                                  : 40px;
     }
@@ -510,12 +515,44 @@ main div.menu_container {
         font-weight                                   : bold;
         font-size                                     : 40px;
     }
+    .menu_area {
+        padding: 5.5rem 7.8rem 6.25rem 7.8rem;
+        background-color: #ffcccc;
+        @media (max-width: 767.98px) {
+           padding-left: 2rem;
+           padding-right: 2rem;
+        }
+
+        @media (max-width: 575.98px) {
+            font-size: small;
+        }               
+        > div {
+            margin-bottom: 5rem;
+        }
+        .menu_title, .below_title {
+            font-size: 2rem;
+        }
+    }
+    .note_ench {
+        font-family                       : 'Pacifico', cursive;
+        .menu_title .fa-music {
+            @include info_style ($lc  : #ff6666, $rc: #ff9966);
+            font-size: 3rem;
+        }  
+    }
 
     .menu_title,
     .below_title {
         text-align                                    : center;
     }
 
+    .below_title .fas, .below_title .info_1 {
+        display: inline;
+    }
+    .below_title .fas{
+        @include info_style ($lc  : #ff6666, $rc: #ff9966);
+    }
+    
     .menu_area .item_1,
     .menu_area .item_2,
     .menu_area .item_3,
@@ -545,13 +582,20 @@ main div.menu_container {
         .divider {
             width                                     : 100%;
             text-align                                : center;
-
-            hr {
-                margin-left                           : auto;
-                margin-right                          : auto;
-                width                                 : 35%;
-
-            }
+            font-size: x-large;
+            @media (max-width: 575.98px) {
+                font-size: medium;
+            }     
+            &:hover hr {
+                margin-left: auto;
+                margin-right: auto;
+                width: 28%;
+                box-shadow: 1px 0 2px 1px #330000;
+                color: #330000;
+                @media (max-width: 575.98px) {
+                    width: 20%;
+                }               
+}
 
             .left {
                 float                                 : left;
