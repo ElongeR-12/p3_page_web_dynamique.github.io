@@ -463,7 +463,7 @@ main div.menu_container {
     font-weight: bold;
     font-size: 40px; }
   main div.menu_container .menu_area {
-    padding: 5.5rem 7.8rem 6.25rem 7.8rem;
+    padding: 5.5rem 4rem 6.25rem 4rem;
     background-color: #ffcccc; }
     @media (max-width: 767.98px) {
       main div.menu_container .menu_area {
@@ -483,6 +483,19 @@ main div.menu_container {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-size: 3rem; }
+  main div.menu_container .chic_fr {
+    font-family: 'Lobster', cursive;
+    background-color: #fdf1f7; }
+    main div.menu_container .chic_fr .info_2 {
+      background: linear-gradient(to right, #cc9933 0%, #330867 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+  main div.menu_container .chic_fr .item_1 {
+    color: #cc6600; }
+  main div.menu_container .chic_fr .item_2 {
+    color: #b479ea; }
+  main div.menu_container .chic_fr .dessert {
+    color: #2e0f84; }
   main div.menu_container .menu_title,
   main div.menu_container .below_title {
     text-align: center; }
@@ -520,43 +533,161 @@ main div.menu_container {
         main div.menu_container .menu_area .item_3 .menu_info div div:last-child p,
         main div.menu_container .menu_area .dessert .menu_info div div:last-child p {
           text-align: end; }
+    main div.menu_container .menu_area .item_1 .menu_info_2 div,
+    main div.menu_container .menu_area .item_2 .menu_info_2 div,
+    main div.menu_container .menu_area .item_3 .menu_info_2 div,
+    main div.menu_container .menu_area .dessert .menu_info_2 div {
+      width: 100%; }
+      main div.menu_container .menu_area .item_1 .menu_info_2 div div:first-child,
+      main div.menu_container .menu_area .item_2 .menu_info_2 div div:first-child,
+      main div.menu_container .menu_area .item_3 .menu_info_2 div div:first-child,
+      main div.menu_container .menu_area .dessert .menu_info_2 div div:first-child {
+        width: 75%;
+        float: left;
+        padding-left: 5%; }
+      main div.menu_container .menu_area .item_1 .menu_info_2 div div:last-child,
+      main div.menu_container .menu_area .item_2 .menu_info_2 div div:last-child,
+      main div.menu_container .menu_area .item_3 .menu_info_2 div div:last-child,
+      main div.menu_container .menu_area .dessert .menu_info_2 div div:last-child {
+        width: 15%;
+        float: right;
+        padding-right: 5%; }
+        main div.menu_container .menu_area .item_1 .menu_info_2 div div:last-child p,
+        main div.menu_container .menu_area .item_2 .menu_info_2 div div:last-child p,
+        main div.menu_container .menu_area .item_3 .menu_info_2 div div:last-child p,
+        main div.menu_container .menu_area .dessert .menu_info_2 div div:last-child p {
+          text-align: end; }
+    main div.menu_container .menu_area .item_1 .menu_2_dessert,
+    main div.menu_container .menu_area .item_2 .menu_2_dessert,
+    main div.menu_container .menu_area .item_3 .menu_2_dessert,
+    main div.menu_container .menu_area .dessert .menu_2_dessert {
+      padding-left: 2.2rem; }
     main div.menu_container .menu_area .item_1 .divider,
     main div.menu_container .menu_area .item_2 .divider,
     main div.menu_container .menu_area .item_3 .divider,
     main div.menu_container .menu_area .dessert .divider {
       width: 100%;
+      margin: 0;
+      overflow: hidden;
       text-align: center;
       font-size: x-large; }
+      main div.menu_container .menu_area .item_1 .divider:hover div.left_edge,
+      main div.menu_container .menu_area .item_2 .divider:hover div.left_edge,
+      main div.menu_container .menu_area .item_3 .divider:hover div.left_edge,
+      main div.menu_container .menu_area .dessert .divider:hover div.left_edge {
+        width: 32%;
+        min-width: 21.2vw;
+        margin: 0;
+        overflow: hidden;
+        display: inline-block;
+        padding-bottom: 30px; }
+        main div.menu_container .menu_area .item_1 .divider:hover div.left_edge .arrow_left,
+        main div.menu_container .menu_area .item_2 .divider:hover div.left_edge .arrow_left,
+        main div.menu_container .menu_area .item_3 .divider:hover div.left_edge .arrow_left,
+        main div.menu_container .menu_area .dessert .divider:hover div.left_edge .arrow_left {
+          float: left;
+          position: relative; }
+          main div.menu_container .menu_area .item_1 .divider:hover div.left_edge .arrow_left div,
+          main div.menu_container .menu_area .item_2 .divider:hover div.left_edge .arrow_left div,
+          main div.menu_container .menu_area .item_3 .divider:hover div.left_edge .arrow_left div,
+          main div.menu_container .menu_area .dessert .divider:hover div.left_edge .arrow_left div {
+            display: inline-block; }
+          main div.menu_container .menu_area .item_1 .divider:hover div.left_edge .arrow_left .triangle_1,
+          main div.menu_container .menu_area .item_2 .divider:hover div.left_edge .arrow_left .triangle_1,
+          main div.menu_container .menu_area .item_3 .divider:hover div.left_edge .arrow_left .triangle_1,
+          main div.menu_container .menu_area .dessert .divider:hover div.left_edge .arrow_left .triangle_1 {
+            border-top: 0.4vw solid #fdf1f7;
+            border-bottom: 0.4vw solid #fdf1f7;
+            border-right: 16vw solid; }
+          main div.menu_container .menu_area .item_1 .divider:hover div.left_edge .arrow_left .triangle_2,
+          main div.menu_container .menu_area .item_2 .divider:hover div.left_edge .arrow_left .triangle_2,
+          main div.menu_container .menu_area .item_3 .divider:hover div.left_edge .arrow_left .triangle_2,
+          main div.menu_container .menu_area .dessert .divider:hover div.left_edge .arrow_left .triangle_2 {
+            border-left: 4vw solid;
+            border-top: 0.4vw solid #fdf1f7;
+            border-bottom: 0.4vw solid #fdf1f7;
+            margin-left: -7px; }
+      main div.menu_container .menu_area .item_1 .divider div.center,
+      main div.menu_container .menu_area .item_2 .divider div.center,
+      main div.menu_container .menu_area .item_3 .divider div.center,
+      main div.menu_container .menu_area .dessert .divider div.center {
+        width: 25%;
+        margin: 0;
+        overflow: hidden;
+        display: inline-block;
+        text-align: center; }
+      main div.menu_container .menu_area .item_1 .divider:hover div.right_edge,
+      main div.menu_container .menu_area .item_2 .divider:hover div.right_edge,
+      main div.menu_container .menu_area .item_3 .divider:hover div.right_edge,
+      main div.menu_container .menu_area .dessert .divider:hover div.right_edge {
+        width: 32%;
+        min-width: 21.2vw;
+        margin: 0;
+        overflow: hidden;
+        display: inline-block;
+        padding-bottom: 30px; }
+        main div.menu_container .menu_area .item_1 .divider:hover div.right_edge .arrow_right,
+        main div.menu_container .menu_area .item_2 .divider:hover div.right_edge .arrow_right,
+        main div.menu_container .menu_area .item_3 .divider:hover div.right_edge .arrow_right,
+        main div.menu_container .menu_area .dessert .divider:hover div.right_edge .arrow_right {
+          float: right;
+          position: relative; }
+          main div.menu_container .menu_area .item_1 .divider:hover div.right_edge .arrow_right div,
+          main div.menu_container .menu_area .item_2 .divider:hover div.right_edge .arrow_right div,
+          main div.menu_container .menu_area .item_3 .divider:hover div.right_edge .arrow_right div,
+          main div.menu_container .menu_area .dessert .divider:hover div.right_edge .arrow_right div {
+            display: inline-block; }
+          main div.menu_container .menu_area .item_1 .divider:hover div.right_edge .arrow_right .triangle_1,
+          main div.menu_container .menu_area .item_2 .divider:hover div.right_edge .arrow_right .triangle_1,
+          main div.menu_container .menu_area .item_3 .divider:hover div.right_edge .arrow_right .triangle_1,
+          main div.menu_container .menu_area .dessert .divider:hover div.right_edge .arrow_right .triangle_1 {
+            font-size: 0px;
+            line-height: 0%;
+            width: 0px;
+            border-top: 0.4vw solid #fdf1f7;
+            border-bottom: 0.4vw solid #fdf1f7;
+            border-right: 4vw solid; }
+          main div.menu_container .menu_area .item_1 .divider:hover div.right_edge .arrow_right .triangle_2,
+          main div.menu_container .menu_area .item_2 .divider:hover div.right_edge .arrow_right .triangle_2,
+          main div.menu_container .menu_area .item_3 .divider:hover div.right_edge .arrow_right .triangle_2,
+          main div.menu_container .menu_area .dessert .divider:hover div.right_edge .arrow_right .triangle_2 {
+            font-size: 0px;
+            line-height: 0%;
+            width: 0px;
+            border-left: 16vw solid;
+            border-top: 0.4vw solid #fdf1f7;
+            border-bottom: 0.4vw solid #fdf1f7;
+            margin-left: -7px; }
+    main div.menu_container .menu_area .item_1:hover hr,
+    main div.menu_container .menu_area .item_2:hover hr,
+    main div.menu_container .menu_area .item_3:hover hr,
+    main div.menu_container .menu_area .dessert:hover hr {
+      margin-left: auto;
+      margin-right: auto;
+      width: 28%;
+      box-shadow: 1px 0 2px 1px #330000;
+      color: #330000; }
       @media (max-width: 575.98px) {
-        main div.menu_container .menu_area .item_1 .divider,
-        main div.menu_container .menu_area .item_2 .divider,
-        main div.menu_container .menu_area .item_3 .divider,
-        main div.menu_container .menu_area .dessert .divider {
-          font-size: medium; } }
-      main div.menu_container .menu_area .item_1 .divider:hover hr,
-      main div.menu_container .menu_area .item_2 .divider:hover hr,
-      main div.menu_container .menu_area .item_3 .divider:hover hr,
-      main div.menu_container .menu_area .dessert .divider:hover hr {
-        margin-left: auto;
-        margin-right: auto;
-        width: 28%;
-        box-shadow: 1px 0 2px 1px #330000;
-        color: #330000; }
-        @media (max-width: 575.98px) {
-          main div.menu_container .menu_area .item_1 .divider:hover hr,
-          main div.menu_container .menu_area .item_2 .divider:hover hr,
-          main div.menu_container .menu_area .item_3 .divider:hover hr,
-          main div.menu_container .menu_area .dessert .divider:hover hr {
-            width: 20%; } }
-      main div.menu_container .menu_area .item_1 .divider .left,
-      main div.menu_container .menu_area .item_2 .divider .left,
-      main div.menu_container .menu_area .item_3 .divider .left,
-      main div.menu_container .menu_area .dessert .divider .left {
-        float: left; }
-      main div.menu_container .menu_area .item_1 .divider .right,
-      main div.menu_container .menu_area .item_2 .divider .right,
-      main div.menu_container .menu_area .item_3 .divider .right,
-      main div.menu_container .menu_area .dessert .divider .right {
-        float: right; }
+        main div.menu_container .menu_area .item_1:hover hr,
+        main div.menu_container .menu_area .item_2:hover hr,
+        main div.menu_container .menu_area .item_3:hover hr,
+        main div.menu_container .menu_area .dessert:hover hr {
+          width: 20%; } }
+    main div.menu_container .menu_area .item_1 .left,
+    main div.menu_container .menu_area .item_2 .left,
+    main div.menu_container .menu_area .item_3 .left,
+    main div.menu_container .menu_area .dessert .left {
+      float: left; }
+    main div.menu_container .menu_area .item_1 .right,
+    main div.menu_container .menu_area .item_2 .right,
+    main div.menu_container .menu_area .item_3 .right,
+    main div.menu_container .menu_area .dessert .right {
+      float: right; }
+    @media (max-width: 575.98px) {
+      main div.menu_container .menu_area .item_1,
+      main div.menu_container .menu_area .item_2,
+      main div.menu_container .menu_area .item_3,
+      main div.menu_container .menu_area .dessert {
+        font-size: medium; } }
 
 /*# sourceMappingURL=main.css.map */
