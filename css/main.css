@@ -1,4 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Pacifico&family=Parisienne&display=swap");
+.wiggle {
+  animation: wiggle 200ms infinite;
+  animation-timing-function: linear;
+  -webkit-animation: wiggle 200ms infinite;
+  transition: 1.5s;
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -o-transition: 1.5s; }
+
+.wiggle:hover {
+  animation: none; }
+
+@keyframes wiggle {
+  0% {
+    transform: translate(2px, 0); }
+  50% {
+    transform: translate(-2px, 0); }
+  100% {
+    transform: translate(2px, 0); } }
+.circle-1 {
+  animation: move 1s ease-in-out infinite; }
+
+.circle-1a {
+  animation: fade 1s ease-in-out infinite; }
+
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.circle-2 {
+  animation: move 1s ease-in-out infinite; }
+
+@keyframes move {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(60px); } }
+.circle-1a {
+  margin-left: -55px;
+  opacity: 0; }
+
+.circle-3 {
+  animation: circle-3 1s ease-in-out infinite;
+  opacity: 1; }
+
+@keyframes circle-3 {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 header div, main, main .home_area .container .box_container {
   width: 100%;
   margin: 0;
@@ -282,38 +334,6 @@ main .home_area {
           max-width: 70%;
           margin-top: 40px; } }
 
-.circle-1 {
-  animation: move 1s ease-in-out infinite; }
-
-.circle-1a {
-  animation: fade 1s ease-in-out infinite; }
-
-@keyframes fade {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-.circle-2 {
-  animation: move 1s ease-in-out infinite; }
-
-@keyframes move {
-  0% {
-    transform: translateX(0); }
-  100% {
-    transform: translateX(60px); } }
-.circle-1a {
-  margin-left: -55px;
-  opacity: 0; }
-
-.circle-3 {
-  animation: circle-3 1s ease-in-out infinite;
-  opacity: 1; }
-
-@keyframes circle-3 {
-  0% {
-    opacity: 1; }
-  100% {
-    opacity: 0; } }
 footer {
   height: 138px;
   background-color: #669999; }
@@ -364,26 +384,6 @@ footer {
         footer .footer_container div:last-child a:hover {
           color: white; }
 
-.wiggle {
-  animation: wiggle 200ms infinite;
-  animation-timing-function: linear;
-  -webkit-animation: wiggle 200ms infinite;
-  transition: 1.5s;
-  -webkit-transition: 1.5s;
-  -moz-transition: 1.5s;
-  -ms-transition: 1.5s;
-  -o-transition: 1.5s; }
-
-.wiggle:hover {
-  animation: none; }
-
-@keyframes wiggle {
-  0% {
-    transform: translate(2px, 0); }
-  50% {
-    transform: translate(-2px, 0); }
-  100% {
-    transform: translate(2px, 0); } }
 main div.menu_container {
   max-width: 946px;
   padding: 80px 125px 105px 125px;

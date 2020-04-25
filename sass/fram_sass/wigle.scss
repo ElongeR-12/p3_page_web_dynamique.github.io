@@ -1,0 +1,24 @@
+@import "./mixins.scss";
+
+.wiggle {
+    @include animation;
+    @include transition;
+}
+
+.wiggle:hover {
+    animation                                         : none;
+}
+
+@keyframes wiggle {
+    0% {
+        transform                                     : translate(2px, 0);
+    }
+
+    50% {
+        transform                                     : translate(-2px, 0);
+    }
+
+    100% {
+        transform                                     : translate(2px, 0);
+    }
+}

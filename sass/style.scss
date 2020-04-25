@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Pacifico&family=Parisienne&display=swap');
 
 @import "./fram_sass/mixins.scss";
+@import "./fram_sass/wigle.scss";
+@import "./fram_sass/loaded.scss";
 
 %wrapp {
     width                                             : 100%;
@@ -289,57 +291,7 @@ main {
 
 // ANIMATION
 
-.circle-1 {
-    animation                                         : move 1s ease-in-out infinite;
-}
 
-.circle-1a {
-    animation                                         : fade 1s ease-in-out infinite;
-}
-
-@keyframes fade {
-    0% {
-        opacity                                       : 0;
-    }
-
-    100% {
-        opacity                                       : 1;
-    }
-}
-
-.circle-2 {
-    animation                                         : move 1s ease-in-out infinite;
-}
-
-@keyframes move {
-    0% {
-        transform                                     : translateX(0);
-    }
-
-    100% {
-        transform                                     : translateX(60px);
-    }
-}
-
-.circle-1a {
-    margin-left                                       : -55px;
-    opacity                                           : 0;
-}
-
-.circle-3 {
-    animation                                         : circle-3 1s ease-in-out infinite;
-    opacity                                           : 1;
-}
-
-@keyframes circle-3 {
-    0% {
-        opacity                                       : 1;
-    }
-
-    100% {
-        opacity                                       : 0;
-    }
-}
 
 //footer
 footer {
@@ -391,28 +343,6 @@ footer {
     }
 }
 
-.wiggle {
-    @include animation;
-    @include transition;
-}
-
-.wiggle:hover {
-    animation                                         : none;
-}
-
-@keyframes wiggle {
-    0% {
-        transform                                     : translate(2px, 0);
-    }
-
-    50% {
-        transform                                     : translate(-2px, 0);
-    }
-
-    100% {
-        transform                                     : translate(2px, 0);
-    }
-}
 
 ///PAGES
 main div.menu_container {
@@ -637,9 +567,11 @@ main div.menu_container {
                 overflow                              : hidden;
                 display                               : inline-block;
                 text-align                            : center;
+                
                 @media (max-width: 575.98px) {
                     width: 40%;
                 }
+
             }
 
             &:hover div.right_edge {
