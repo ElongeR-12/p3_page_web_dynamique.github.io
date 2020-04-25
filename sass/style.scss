@@ -51,16 +51,11 @@ main {
             margin-right                              : 50px;
         }
 
-        @media (max-width: 1199.98px) {
-            margin-left                               : 50px;
-            margin-right                              : 50px;
+        @media (max-width: 991.98px) {
+            margin-left                               : 0px;
+            margin-right                              : 0px
         }
-
-        @media (max-width: 767.98px) {
-            margin-left                               : 5px;
-            margin-right                              : 5px;
-        }
-
+        
         .container {
             text-align                                : center;
 
@@ -70,15 +65,15 @@ main {
 
                 .box {
                     height                            : 765px;
-                    width                             : 484px;
+                    width                             : 33vw;
                     max-width                         : 100%;
                     overflow                          : hidden;
-                    margin                            : 40px 40px;
+                    margin                            : 40px 2.5vw;
                     display                           : inline-block;
                     border                            : 4px solid #a39f9f17;
-                    position                          : relative;
                     font-size                         : 20px;
                     font-weight                       : bolder;
+                    text-decoration: none;
 
                     &:hover {
                         cursor                        : pointer;
@@ -86,23 +81,20 @@ main {
 
                     @media (max-width: 1199.98px) {
                         margin                        : 10px 10px;
-                        width                         : 399px;
                         height                        : 643px;
                     }
 
                     @media (max-width: 991.98px) {
-                        width                         : 312px;
                         height                        : 512px;
                     }
 
                     @media (max-width: 767.98px) {
-                        width                         : 226px;
                         height                        : 375px;
                     }
 
                     @media (max-width: 575.98px) {
-                        width                         : 312px;
-                        height                        : 512px;
+                        width: 80%;
+                        height: 650px;
                     }
                 }
 
@@ -131,26 +123,9 @@ main {
                         .menu_1 {
                             color                     : #330000;
                         }
-
-                        @media (max-width: 1199.98px) {
-                            top                       : 33.6%;
-                            left                      : 14.8%;
-                        }
-
-                        @media (max-width: 991.98px) {
-                            top                       : 27.8%;
-                            left                      : 11.6%;
-                        }
-
-                        @media (max-width: 767.98px) {
-                            top                       : 28%;
-                            left                      : 16%;
-                        }
-
-                        @media (max-width: 575.98px) {
-                            top                       : 40%;
-                            left                      : 30%;
-                        }
+                    }
+                    @media (max-width: 575.98px) {
+                        @include police_menu ($fs: x-large);
                     }
                 }
 
@@ -178,27 +153,9 @@ main {
                         .menu_2 {
                             color                     : #cc9933;
                         }
-
-                        @media (max-width: 1199.98px) {
-                            top                       : 33.6%;
-                            left                      : 14.8%;
-                        }
-
-                        @media (max-width: 991.98px) {
-                            top                       : 27.8%;
-                            left                      : 11.6%;
-                        }
-
-                        @media (max-width: 767.98px) {
-                            top                       : 28%;
-                            left                      : 16%;
-                        }
-
-                        @media (max-width: 575.98px) {
-                            top                       : 40%;
-                            left                      : 30%;
-                        }
-
+                    }
+                    @media (max-width: 575.98px) {
+                        @include police_menu ($fs: x-large);
                     }
                 }
 
@@ -226,27 +183,10 @@ main {
                         .menu_3 {
                             color                     : #99ccff;
 
-                        }
-
-                        @media (max-width: 1199.98px) {
-                            top                       : 33.6%;
-                            left                      : 14.8%;
-                        }
-
-                        @media (max-width: 991.98px) {
-                            top                       : 27.8%;
-                            left                      : 11.6%;
-                        }
-
-                        @media (max-width: 767.98px) {
-                            top                       : 28%;
-                            left                      : 16%;
-                        }
-
-                        @media (max-width: 575.98px) {
-                            top                       : 40%;
-                            left                      : 30%;
-                        }
+                        }  
+                    }
+                    @media (max-width: 575.98px) {
+                        @include police_menu ($fs: x-large);
                     }
                 }
 
@@ -274,26 +214,9 @@ main {
                         .menu_4 {
                             color                     : #339933;
                         }
-
-                        @media (max-width: 1199.98px) {
-                            top                       : 33.6%;
-                            left                      : 14.8%;
-                        }
-
-                        @media (max-width: 991.98px) {
-                            top                       : 27.8%;
-                            left                      : 11.6%;
-                        }
-
-                        @media (max-width: 767.98px) {
-                            top                       : 28%;
-                            left                      : 16%;
-                        }
-
-                        @media (max-width: 575.98px) {
-                            top                       : 40%;
-                            left                      : 30%;
-                        }
+                    }
+                    @media (max-width: 575.98px) {
+                        @include police_menu ($fs: x-large);
                     }
                 }
 

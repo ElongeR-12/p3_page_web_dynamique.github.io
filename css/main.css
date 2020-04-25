@@ -41,56 +41,48 @@ main .home_area {
     main .home_area {
       margin-left: 50px;
       margin-right: 50px; } }
-  @media (max-width: 1199.98px) {
+  @media (max-width: 991.98px) {
     main .home_area {
-      margin-left: 50px;
-      margin-right: 50px; } }
-  @media (max-width: 767.98px) {
-    main .home_area {
-      margin-left: 5px;
-      margin-right: 5px; } }
+      margin-left: 0px;
+      margin-right: 0px; } }
   main .home_area .container {
     text-align: center; }
     main .home_area .container .box_container {
       text-align: center; }
       main .home_area .container .box_container .box {
         height: 765px;
-        width: 484px;
+        width: 33vw;
         max-width: 100%;
         overflow: hidden;
-        margin: 40px 40px;
+        margin: 40px 2.5vw;
         display: inline-block;
         border: 4px solid #a39f9f17;
-        position: relative;
         font-size: 20px;
-        font-weight: bolder; }
+        font-weight: bolder;
+        text-decoration: none; }
         main .home_area .container .box_container .box:hover {
           cursor: pointer; }
         @media (max-width: 1199.98px) {
           main .home_area .container .box_container .box {
             margin: 10px 10px;
-            width: 399px;
             height: 643px; } }
         @media (max-width: 991.98px) {
           main .home_area .container .box_container .box {
-            width: 312px;
             height: 512px; } }
         @media (max-width: 767.98px) {
           main .home_area .container .box_container .box {
-            width: 226px;
             height: 375px; } }
         @media (max-width: 575.98px) {
           main .home_area .container .box_container .box {
-            width: 312px;
-            height: 512px; } }
+            width: 80%;
+            height: 650px; } }
       main .home_area .container .box_container .box_color1 {
         font-family: 'Pacifico', cursive;
         background-color: #ffcccc;
         font-size: 3vw; }
         main .home_area .container .box_container .box_color1 .box_info {
-          position: absolute;
-          top: 40%;
-          left: 18%;
+          padding-top: 50%;
+          margin: 0 auto;
           opacity: 1;
           transition: 1.3s;
           -webkit-transition: 1.3s;
@@ -117,30 +109,17 @@ main .home_area {
           main .home_area .container .box_container .box_color1 .box_info .info_1,
           main .home_area .container .box_container .box_color1 .box_info .menu_1 {
             color: #330000; }
-          @media (max-width: 1199.98px) {
-            main .home_area .container .box_container .box_color1 .box_info {
-              top: 33.6%;
-              left: 14.8%; } }
-          @media (max-width: 991.98px) {
-            main .home_area .container .box_container .box_color1 .box_info {
-              top: 27.8%;
-              left: 11.6%; } }
-          @media (max-width: 767.98px) {
-            main .home_area .container .box_container .box_color1 .box_info {
-              top: 28%;
-              left: 16%; } }
-          @media (max-width: 575.98px) {
-            main .home_area .container .box_container .box_color1 .box_info {
-              top: 40%;
-              left: 30%; } }
+        @media (max-width: 575.98px) {
+          main .home_area .container .box_container .box_color1 {
+            background-color: #f5d9d961;
+            font-size: x-large; } }
       main .home_area .container .box_container .box_color2 {
         font-family: 'Lobster', cursive;
         background-color: #f5d9d961;
         font-size: 3vw; }
         main .home_area .container .box_container .box_color2 .box_info {
-          position: absolute;
-          top: 40%;
-          left: 18%;
+          padding-top: 50%;
+          margin: 0 auto;
           opacity: 1;
           transition: 1.3s;
           -webkit-transition: 1.3s;
@@ -166,30 +145,17 @@ main .home_area {
             -webkit-text-fill-color: transparent; }
           main .home_area .container .box_container .box_color2 .box_info .menu_2 {
             color: #cc9933; }
-          @media (max-width: 1199.98px) {
-            main .home_area .container .box_container .box_color2 .box_info {
-              top: 33.6%;
-              left: 14.8%; } }
-          @media (max-width: 991.98px) {
-            main .home_area .container .box_container .box_color2 .box_info {
-              top: 27.8%;
-              left: 11.6%; } }
-          @media (max-width: 767.98px) {
-            main .home_area .container .box_container .box_color2 .box_info {
-              top: 28%;
-              left: 16%; } }
-          @media (max-width: 575.98px) {
-            main .home_area .container .box_container .box_color2 .box_info {
-              top: 40%;
-              left: 30%; } }
+        @media (max-width: 575.98px) {
+          main .home_area .container .box_container .box_color2 {
+            background-color: #f5d9d961;
+            font-size: x-large; } }
       main .home_area .container .box_container .box_color3 {
         font-family: 'Dancing Script', cursive;
         background-color: #a39f9f1f;
         font-size: 3vw; }
         main .home_area .container .box_container .box_color3 .box_info {
-          position: absolute;
-          top: 40%;
-          left: 18%;
+          padding-top: 50%;
+          margin: 0 auto;
           opacity: 1;
           transition: 1.3s;
           -webkit-transition: 1.3s;
@@ -215,30 +181,17 @@ main .home_area {
             -webkit-text-fill-color: transparent; }
           main .home_area .container .box_container .box_color3 .box_info .menu_3 {
             color: #99ccff; }
-          @media (max-width: 1199.98px) {
-            main .home_area .container .box_container .box_color3 .box_info {
-              top: 33.6%;
-              left: 14.8%; } }
-          @media (max-width: 991.98px) {
-            main .home_area .container .box_container .box_color3 .box_info {
-              top: 27.8%;
-              left: 11.6%; } }
-          @media (max-width: 767.98px) {
-            main .home_area .container .box_container .box_color3 .box_info {
-              top: 28%;
-              left: 16%; } }
-          @media (max-width: 575.98px) {
-            main .home_area .container .box_container .box_color3 .box_info {
-              top: 40%;
-              left: 30%; } }
+        @media (max-width: 575.98px) {
+          main .home_area .container .box_container .box_color3 {
+            background-color: #f5d9d961;
+            font-size: x-large; } }
       main .home_area .container .box_container .box_color4 {
         font-family: 'Parisienne', cursive;
         background-color: #a39f9f08;
         font-size: 3vw; }
         main .home_area .container .box_container .box_color4 .box_info {
-          position: absolute;
-          top: 40%;
-          left: 18%;
+          padding-top: 50%;
+          margin: 0 auto;
           opacity: 1;
           transition: 1.3s;
           -webkit-transition: 1.3s;
@@ -264,22 +217,10 @@ main .home_area {
             -webkit-text-fill-color: transparent; }
           main .home_area .container .box_container .box_color4 .box_info .menu_4 {
             color: #339933; }
-          @media (max-width: 1199.98px) {
-            main .home_area .container .box_container .box_color4 .box_info {
-              top: 33.6%;
-              left: 14.8%; } }
-          @media (max-width: 991.98px) {
-            main .home_area .container .box_container .box_color4 .box_info {
-              top: 27.8%;
-              left: 11.6%; } }
-          @media (max-width: 767.98px) {
-            main .home_area .container .box_container .box_color4 .box_info {
-              top: 28%;
-              left: 16%; } }
-          @media (max-width: 575.98px) {
-            main .home_area .container .box_container .box_color4 .box_info {
-              top: 40%;
-              left: 30%; } }
+        @media (max-width: 575.98px) {
+          main .home_area .container .box_container .box_color4 {
+            background-color: #f5d9d961;
+            font-size: x-large; } }
     main .home_area .container .wrapper {
       width: 180px;
       margin-left: auto;

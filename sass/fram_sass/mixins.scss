@@ -36,9 +36,9 @@
 }
 
 @mixin info_position {
-    position                      : absolute;
-    top                           : 40%;
-    left                          : 18%;
+    
+    padding-top: 50%;
+    margin: 0 auto;
     opacity                       : 1;
 }
 
