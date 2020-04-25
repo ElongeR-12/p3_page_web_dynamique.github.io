@@ -412,7 +412,9 @@ main div.menu_container {
         padding-right: 2rem; } }
     @media (max-width: 575.98px) {
       main div.menu_container .menu_area {
-        font-size: small; } }
+        font-size: small;
+        padding-left: 0.25rem;
+        padding-right: 0.25rem; } }
     main div.menu_container .menu_area > div {
       margin-bottom: 5rem; }
     main div.menu_container .menu_area .menu_title,
@@ -571,6 +573,12 @@ main div.menu_container {
         overflow: hidden;
         display: inline-block;
         padding-bottom: 30px; }
+        @media (max-width: 575.98px) {
+          main div.menu_container .menu_area .item_1 .divider:hover div.left_edge,
+          main div.menu_container .menu_area .item_2 .divider:hover div.left_edge,
+          main div.menu_container .menu_area .item_3 .divider:hover div.left_edge,
+          main div.menu_container .menu_area .dessert .divider:hover div.left_edge {
+            width: 15%; } }
         main div.menu_container .menu_area .item_1 .divider:hover div.left_edge .arrow_left,
         main div.menu_container .menu_area .item_2 .divider:hover div.left_edge .arrow_left,
         main div.menu_container .menu_area .item_3 .divider:hover div.left_edge .arrow_left,
@@ -606,6 +614,12 @@ main div.menu_container {
         overflow: hidden;
         display: inline-block;
         text-align: center; }
+        @media (max-width: 575.98px) {
+          main div.menu_container .menu_area .item_1 .divider div.center,
+          main div.menu_container .menu_area .item_2 .divider div.center,
+          main div.menu_container .menu_area .item_3 .divider div.center,
+          main div.menu_container .menu_area .dessert .divider div.center {
+            width: 40%; } }
       main div.menu_container .menu_area .item_1 .divider:hover div.right_edge,
       main div.menu_container .menu_area .item_2 .divider:hover div.right_edge,
       main div.menu_container .menu_area .item_3 .divider:hover div.right_edge,
@@ -616,6 +630,12 @@ main div.menu_container {
         overflow: hidden;
         display: inline-block;
         padding-bottom: 30px; }
+        @media (max-width: 575.98px) {
+          main div.menu_container .menu_area .item_1 .divider:hover div.right_edge,
+          main div.menu_container .menu_area .item_2 .divider:hover div.right_edge,
+          main div.menu_container .menu_area .item_3 .divider:hover div.right_edge,
+          main div.menu_container .menu_area .dessert .divider:hover div.right_edge {
+            width: 15%; } }
         main div.menu_container .menu_area .item_1 .divider:hover div.right_edge .arrow_right,
         main div.menu_container .menu_area .item_2 .divider:hover div.right_edge .arrow_right,
         main div.menu_container .menu_area .item_3 .divider:hover div.right_edge .arrow_right,
@@ -656,7 +676,8 @@ main div.menu_container {
       margin-right: auto;
       width: 28%;
       box-shadow: 1px 0 2px 1px #330000;
-      color: #330000; }
+      color: #330000;
+      background-color: #330000; }
       @media (max-width: 575.98px) {
         main div.menu_container .menu_area .item_1:hover hr,
         main div.menu_container .menu_area .item_2:hover hr,

@@ -450,6 +450,8 @@ main div.menu_container {
 
         @media (max-width: 575.98px) {
             font-size                                 : small;
+            padding-left                              : 0.25rem;
+            padding-right                             : 0.25rem;
         }
 
         >div {
@@ -601,6 +603,9 @@ main div.menu_container {
                 overflow                              : hidden;
                 display                               : inline-block;
                 padding-bottom                        : 30px;
+                @media (max-width: 575.98px) {
+                    width: 15%;
+                }
 
                 .arrow_left {
 
@@ -632,6 +637,9 @@ main div.menu_container {
                 overflow                              : hidden;
                 display                               : inline-block;
                 text-align                            : center;
+                @media (max-width: 575.98px) {
+                    width: 40%;
+                }
             }
 
             &:hover div.right_edge {
@@ -641,6 +649,9 @@ main div.menu_container {
                 overflow                              : hidden;
                 display                               : inline-block;
                 padding-bottom                        : 30px;
+                @media (max-width: 575.98px) {
+                    width: 15%;
+                }
 
                 .arrow_right {
 
@@ -681,6 +692,7 @@ main div.menu_container {
             width                                     : 28%;
             box-shadow                                : 1px 0 2px 1px #330000;
             color                                     : #330000;
+            background-color: #330000;
 
             @media (max-width: 575.98px) {
                 width                                 : 20%;
