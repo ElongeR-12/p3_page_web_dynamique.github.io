@@ -88,7 +88,7 @@ header div {
         color: white; }
 
 main .home_area {
-  margin: 100px 100px 90px 100px; }
+  margin: 100px 100px 200px 100px; }
   @media (max-width: 1199.98px) {
     main .home_area {
       margin-left: 50px;
@@ -335,6 +335,9 @@ main .home_area {
           margin-top: 40px; } }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   height: 138px;
   background-color: #669999; }
   footer .footer_container {
