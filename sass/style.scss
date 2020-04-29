@@ -3,41 +3,42 @@
 @import "./fram_sass/mixins.scss";
 @import "./fram_sass/wigle.scss";
 @import "./fram_sass/loaded.scss";
+@import "./fram_sass/underlineLeftToRight.scss";
 
 %wrapp {
-    width                                             : 100%;
-    margin                                            : 0;
-    overflow                                          : hidden;
+    width                                                 : 100%;
+    margin                                                : 0;
+    overflow                                              : hidden;
 }
 
 body {
-    max-width                                         : 1500px;
-    margin                                            : auto;
-    font-family                                       : sans-serif;
+    max-width                                             : 1500px;
+    margin                                                : auto;
+    font-family                                           : sans-serif;
 }
 
 /*-----------------------------------------HEADER--------------------------------------------*/
 
 header div {
     @extend %wrapp;
-    height                                            : 100px;
-    background-color                                  : #669999;
-    text-align                                        : center;
-    padding-left                                      : 0;
+    height                                                : 100px;
+    background-color                                      : #669999;
+    text-align                                            : center;
+    padding-left                                          : 0;
 
     nav {
-        font-size                                     : 50px;
-        font-weight                                   : 600;
-        margin-top                                    : 3vh;
-        margin-bottom                                 : 2vh;
+        font-size                                         : 50px;
+        font-weight                                       : 600;
+        margin-top                                        : 3vh;
+        margin-bottom                                     : 2vh;
 
         a {
-            text-decoration                           : none;
+            text-decoration                               : none;
             @include link;
             @include transition;
 
             &:hover {
-                color                                 : invert($color: #000000);
+                color                                     : invert($color: #000000);
             }
         }
     }
@@ -47,53 +48,53 @@ header div {
 main {
     @extend %wrapp;
     form {
-        display: flex;
-        height: 40px;
-        width: 100%;
-        background: #dbd8d5;
-        padding-top: 5px;
-        padding-left: 5px;
-        padding-bottom: 5px;
+        display                                           : flex;
+        height                                            : 40px;
+        width                                             : 100%;
+        background                                        : #dbd8d5;
+        padding-top                                       : 5px;
+        padding-left                                      : 5px;
+        padding-bottom                                    : 5px;
         input {
-            border: none;
-            border-radius: 5px;
-            width: 40vw;
-            padding-left: 20px;
-            font-size: large;
+            border                                        : none;
+            border-radius                                 : 5px;
+            width                                         : 40vw;
+            padding-left                                  : 20px;
+            font-size                                     : large;
         }
         button {
-            background:#f4f9f9;
-            border: none;
-            border-radius: 5px;
-            width: 80px;
-            margin-left: 0;
-            font-size: large;
+            background                                    : #f4f9f9;
+            border                                        : none;
+            border-radius                                 : 5px;
+            width                                         : 80px;
+            margin-left                                   : 0;
+            font-size                                     : large;
         }
     }
     .home_area {
-        margin                                        : 20px 100px 200px 100px;
+        margin                                            : 20px 100px 200px 100px;
 
         @media (max-width: 1199.98px) {
-            margin-left                               : 50px;
-            margin-right                              : 50px;
+            margin-left                                   : 50px;
+            margin-right                                  : 50px;
         }
 
         @media (max-width: 991.98px) {
-            margin-left                               : 0px;
-            margin-right                              : 0px
+            margin-left                                   : 0px;
+            margin-right                                  : 0px
         }
         
         .container {
-            text-align                                : center;
+            text-align                                    : center;
 
             .box_container {
 
                 @extend %wrapp;
                 div {
-                    display: flex;
-                    justify-content: center;
+                    display                               : flex;
+                    justify-content                       : center;
                     @media (max-width: 575.98px) {
-                        flex-direction: column;
+                        flex-direction                    : column;
                     }
                     .box {
                         height                            : 765px;
@@ -103,7 +104,7 @@ main {
                         border                            : 4px solid #a39f9f17;
                         font-size                         : x-large;
                         font-weight                       : bolder;
-                        text-decoration                   : none;                       
+                        text-decoration                   : none;
     
                         &:hover {
                             cursor                        : pointer;
@@ -125,11 +126,11 @@ main {
                         @media (max-width: 575.98px) {
                             width                         : 80%;
                             height                        : 500px;
-                            margin-left: auto;
-                            margin-right: auto;
+                            margin-left                   : auto;
+                            margin-right                  : auto;
                         }
                         .box_info {
-                            flex-direction: column;
+                            flex-direction                : column;
                             @include info_position;
                             @include transition ($time    : 1.3s);
     
@@ -142,7 +143,7 @@ main {
                                 @include second_head;
                             }
                             @media (max-width: 575.98px) {
-                                font-size: x-large;
+                                font-size                 : x-large;
                             }
                         }
                      
@@ -220,63 +221,63 @@ main {
             }
 
             .wrapper {
-                width                                 : 180px;
-                margin-left                           : auto;
-                margin-right                          : auto;
+                width                                     : 180px;
+                margin-left                               : auto;
+                margin-right                              : auto;
 
                 .circle {
-                    border-radius                     : 50%;
-                    border                            : 3px #eee solid;
-                    float                             : left;
-                    height                            : 40px;
-                    width                             : 40px;
-                    margin-bottom                     : 10px;
-                    background-color                  : #99cbfff7;
+                    border-radius                         : 50%;
+                    border                                : 3px #eee solid;
+                    float                                 : left;
+                    height                                : 40px;
+                    width                                 : 40px;
+                    margin-bottom                         : 10px;
+                    background-color                      : #99cbfff7;
                 }
 
                 @media (max-width: 575.98px) {
-                    display                           : none;
+                    display                               : none;
                 }
 
             }
 
             button {
-                width                                 : 550px;
-                height                                : 80px;
-                background-color                      : #669999;
-                max-width                             : 100%;
-                border                                : none;
-                @include link($size                   : 20px);
-                font-size                             : 3.5vw;
-                font-weight                           : bold;
-                transition                            : 1.5s;
+                width                                     : 550px;
+                height                                    : 80px;
+                background-color                          : #669999;
+                max-width                                 : 100%;
+                border                                    : none;
+                @include link($size                       : 20px);
+                font-size                                 : 3.5vw;
+                font-weight                               : bold;
+                transition                                : 1.5s;
                 @include transition;
 
                 &:hover {
-                    @include transform ($zoom         : 1.01);
-                    cursor                            : pointer;
-                    color                             : invert($color: #000000);
-                    border                            : none;
+                    @include transform ($zoom             : 1.01);
+                    cursor                                : pointer;
+                    color                                 : invert($color: #000000);
+                    border                                : none;
                 }
 
                 @media (max-width: 1199.98px) {
-                    width                             : 551px;
-                    height                            : 99px;
+                    width                                 : 551px;
+                    height                                : 99px;
                 }
 
                 @media (max-width: 991.98px) {
-                    width                             : 439px;
-                    height                            : 79px;
+                    width                                 : 439px;
+                    height                                : 79px;
                 }
 
                 @media (max-width: 767.98px) {
-                    width                             : 324px;
-                    height                            : 58px;
+                    width                                 : 324px;
+                    height                                : 58px;
                 }
 
                 @media (max-width: 575.98px) {
-                    max-width                         : 70%;
-                    margin-top                        : 40px;
+                    max-width                             : 70%;
+                    margin-top                            : 40px;
                 }
             }
         }
@@ -287,51 +288,51 @@ main {
 
 /*-----------------------------------------FOOTER--------------------------------------------*/
 footer {
-    position                                          : fixed;
-    bottom                                            : 0;
+    position                                              : fixed;
+    bottom                                                : 0;
     @extend %wrapp;
-    height                                            : 100px;
-    background-color                                  : #669999;
+    height                                                : 100px;
+    background-color                                      : #669999;
 
     .footer_container {
        @extend %wrapp; 
-        padding-top                                   : 25px;
-        padding-bottom                                : 25px;
+        padding-top                                       : 25px;
+        padding-bottom                                    : 25px;
 
         div:first-child {
-            float                                     : left;
-            width                                     : 50%;
-            padding-left                              : 0;
-            background-color                          : #669999;
-            border                                    : none;
+            float                                         : left;
+            width                                         : 50%;
+            padding-left                                  : 0;
+            background-color                              : #669999;
+            border                                        : none;
 
             a {
                 @include link;
                 @include link_spec;
-                float                                 : left;
-                padding-left                          : 30px;
+                float                                     : left;
+                padding-left                              : 30px;
 
                 &:hover {
-                    color                             : invert($color: #000000);
+                    color                                 : invert($color: #000000);
                 }
             }
         }
 
         div:last-child {
-            float                                     : right;
-            width                                     : 50%;
-            padding-right                             : 0;
-            background-color                          : #669999;
-            border                                    : none;
+            float                                         : right;
+            width                                         : 50%;
+            padding-right                                 : 0;
+            background-color                              : #669999;
+            border                                        : none;
 
             a {
                 @include link;
                 @include link_spec;
-                float                                 : right;
-                padding-right                         : 30px;
+                float                                     : right;
+                padding-right                             : 30px;
 
                 &:hover {
-                    color                             : invert($color: #000000);
+                    color                                 : invert($color: #000000);
                 }
             }
         }
@@ -341,121 +342,130 @@ footer {
 /*-----------------------------------------LES PAGES MENUS--------------------------------------------*/
 
 main div.menu_container {
-    max-width                                         : 946px;
-    padding                                           : 80px 125px 105px 125px;
-    margin-left                                       : auto;
-    margin-right                                      : auto;
+    max-width                                             : 946px;
+    padding                                               : 80px 125px 105px 125px;
+    margin-left                                           : auto;
+    margin-right                                          : auto;
 
     @media (max-width: 991.98px) {
-        padding-right                                 : 40px;
-        padding-left                                  : 40px;
+        padding-right                                     : 40px;
+        padding-left                                      : 40px;
     }
 
     @media (max-width: 575.98px) {
-        padding-right                                 : 20px;
-        padding-left                                  : 20px;
+        padding-right                                     : 20px;
+        padding-left                                      : 20px;
     }
 
     h2 {
-        font-family                                   : sans-serif;
-        text-transform                                : none;
-        text-align                                    : center;
-        font-weight                                   : bold;
-        font-size                                     : 40px;
+        font-family                                       : sans-serif;
+        text-transform                                    : none;
+        text-align                                        : center;
+        font-weight                                       : bold;
+        font-size                                         : 40px;
     }
 
     .menu_area {
-        padding                                       : 5.5rem 4rem 6.25rem 4rem;
-        background-color                              : #ffcccc;
+        padding                                           : 5.5rem 4rem 6.25rem 4rem;
+        background-color                                  : #ffcccc;
 
         @media (max-width: 767.98px) {
-            padding-left                              : 2rem;
-            padding-right                             : 2rem;
+            padding-left                                  : 2rem;
+            padding-right                                 : 2rem;
         }
 
         @media (max-width: 575.98px) {
-            font-size                                 : small;
-            padding-left                              : 0.25rem;
-            padding-right                             : 0.25rem;
+            font-size                                     : small;
+            padding-left                                  : 0.25rem;
+            padding-right                                 : 0.25rem;
         }
 
         >div {
-            margin-bottom                             : 5rem;
+            margin-bottom                                 : 5rem;
         }
 
         .menu_title,
         .below_title {
-            font-size                                 : 2rem;
+            font-size                                     : 2rem;
         }
     }
 
     .note_ench {
-        font-family                                   : 'Pacifico', cursive;
+        font-family                                       : 'Pacifico', cursive;
 
         .menu_title .fa-music {
-            @include info_style ($lc                  : #ff6666, $rc: #ff9966);
-            font-size                                 : 3rem;
+            @include info_style ($lc                      : #ff6666, $rc: #ff9966);
+            font-size                                     : 3rem;
         }
     }
 
     .chic_fr {
-        font-family                                   : 'Lobster', cursive;
+        font-family                                       : 'Lobster', cursive;
 
         .info_2 {
-            @include info_style ($lc                  : #cc9933, $rc: #330867);
+            @include info_style ($lc                      : #cc9933, $rc: #330867);
         }
 
-        background-color                              : #fdf1f7;
+        background-color                                  : #fdf1f7;
     }
 
     .delice_pap {
-        font-family                                   : 'Dancing Script', cursive;
+        font-family                                       : 'Dancing Script', cursive;
 
         .info_3 {
-            @include info_style ($lc                  : #0033cc, $rc: #99ccff);
+            @include info_style ($lc                      : #0033cc, $rc: #99ccff);
             ;
         }
 
-        background-color                              : #b6b3c438;
+        background-color                                  : #b6b3c438;
     }
 
     .palette_gout {
-        font-family                                   : 'Parisienne', cursive;
-        font-size                                     : larger;
+        font-family                                       : 'Parisienne', cursive;
+        font-size                                         : larger;
 
         .info_4 {
             @include info_style;
         }
 
-        background-color                              : #d9e0dc38;
+        background-color                                  : #d9e0dc38;
     }
 
 
     .chic_fr .item_1 {
-        color                                         : #cc6600;
+        color                                             : #cc6600;
+        .divider .between_arrow p.center_text_color2:before {
+            background-color                              : #cc6600;
+        }
     }
 
     .chic_fr .item_2 {
-        color                                         : #b479ea;
+        color                                             : #b479ea;
+        .divider .between_arrow p.center_text_color2:before {
+            background-color                              : #b479ea;
+        }
     }
 
     .chic_fr .dessert {
-        color                                         : #2e0f84;
+        color                                             : #2e0f84;
+        .divider .between_arrow p.center_text_color2:before {
+            background-color                              : #2e0f84;
+        }
     }
 
 
     .menu_title,
     .below_title {
-        text-align                                    : center;
+        text-align                                        : center;
     }
 
     .below_title .fas,
     .below_title .info_1 {
-        display                                       : inline;
+        display                                           : inline;
     }
 
     .below_title .fas {
-        @include info_style ($lc                      : #ff6666, $rc: #ff9966);
+        @include info_style ($lc                          : #ff6666, $rc: #ff9966);
     }
 
     .menu_area .item_1,
@@ -463,41 +473,59 @@ main div.menu_container {
     .menu_area .item_3,
     .menu_area .dessert {
         @extend %wrapp;
+        
         >.divider_line {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            display                                       : flex;
+            justify-content                               : space-between;
+            align-items                                   : center;
             div {
                 @extend %wrapp;
                 hr {
-                    background-color: #480808;
-                    height: 4px;
-                    width: 250px;      
+                    height                                : 4px;
+                    width                                 : 250px;
+                    border                                : none;
+                }
+                hr.line1 {
+                    background-color                      : #480808;
+                }
+                hr.line3 {
+                    background-color                      : #0033cc;
+                }
+                hr.line4 {
+                    background-color                      : #339933;
                 }
                 p {
-                    font-size: x-large;
+                    font-size                             : x-large;
                 }
+                p.center_text_color1:before {
+                    background-color                      : #480808;
+                }
+                
+                p.center_text_color3:before {
+                    background-color                      : #0033cc;
+                }
+                p.center_text_color4:before {
+                    background-color                      : #339933;
+                } 
             }
             div.center_line {
-                text-align: center;
+                text-align                                : center;
             }
-
-    
         }
         .menu_info div {
             @extend %wrapp;
 
             div:first-child {
-                width                                 : 80%;
-                float                                 : left;
+                width                                     : 80%;
+                float                                     : left;
             }
 
             div:last-child {
-                width                                 : 20%;
-                float                                 : right;
+                width                                     : 20%;
+                float                                     : right;
 
                 p {
-                    text-align                        : end;
+                    text-align                            : end;
                 }
             }
 
@@ -506,51 +534,51 @@ main div.menu_container {
         .menu_info_2 div,
         .menu_info_3 div,
         .menu_info_4 div {
-            width                                     : 100%;
+            width                                         : 100%;
 
             div:first-child {
-                width                                 : 75%;
-                float                                 : left;
-                padding-left                          : 5%;
+                width                                     : 75%;
+                float                                     : left;
+                padding-left                              : 5%;
             }
 
             div:last-child {
-                width                                 : 15%;
-                float                                 : right;
-                padding-right                         : 5%;
+                width                                     : 15%;
+                float                                     : right;
+                padding-right                             : 5%;
 
                 p {
-                    text-align                        : end;
+                    text-align                            : end;
                 }
             }
         }
 
         .menu_2_dessert {
-            padding-left                              : 2.2rem;
+            padding-left                                  : 2.2rem;
         }
 
         .divider {
             @extend %wrapp;
-            font-size                                 : x-large;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            font-size                                     : x-large;
+            display                                       : flex;
+            justify-content                               : space-between;
+            align-items                                   : center;
 
             div.left_edge {
                 @extend %wrapp;
                 .arrow_left {
 
-                    display: flex;
+                    display                               : flex;
                     .triangle_1 {
-                        border-top                    : 0.4vw solid #fdf1f7;
-                        border-bottom                 : 0.4vw solid #fdf1f7;
-                        border-right                  : 16vw solid;
+                        border-top                        : 0.4vw solid #fdf1f7;
+                        border-bottom                     : 0.4vw solid #fdf1f7;
+                        border-right                      : 16vw solid;
                     }
 
                     .triangle_2 {
-                        border-left                   : 4vw solid;
-                        border-top                    : 0.4vw solid #fdf1f7;
-                        border-bottom                 : 0.4vw solid #fdf1f7;
+                        border-left                       : 4vw solid;
+                        border-top                        : 0.4vw solid #fdf1f7;
+                        border-bottom                     : 0.4vw solid #fdf1f7;
                       
                     }
                 }
@@ -558,31 +586,26 @@ main div.menu_container {
 
             div.center {
                 @extend %wrapp;
-                text-align                            : center;
+                text-align                                : center;
             }
+            
 
             div.right_edge {
                 @extend %wrapp;
                 .arrow_right {
 
-                    display: flex;
+                    display                               : flex;
                     
                     .triangle_1 {
-                        font-size                     : 0px;
-                        line-height                   : 0%;
-                        width                         : 0px;
-                        border-top                    : 0.4vw solid #fdf1f7;
-                        border-bottom                 : 0.4vw solid #fdf1f7;
-                        border-right                  : 4vw solid;
+                        border-top                        : 0.4vw solid #fdf1f7;
+                        border-bottom                     : 0.4vw solid #fdf1f7;
+                        border-right                      : 4vw solid;
                     }
 
                     .triangle_2 {
-                        font-size                     : 0px;
-                        line-height                   : 0%;
-                        width                         : 0px;
-                        border-left                   : 16vw solid;
-                        border-top                    : 0.4vw solid #fdf1f7;
-                        border-bottom                 : 0.4vw solid #fdf1f7;
+                        border-left                       : 16vw solid;
+                        border-top                        : 0.4vw solid #fdf1f7;
+                        border-bottom                     : 0.4vw solid #fdf1f7;
                         
                     }
                 }

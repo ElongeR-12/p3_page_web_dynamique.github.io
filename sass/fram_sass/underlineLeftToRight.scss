@@ -1,0 +1,18 @@
+p.center_text{
+    position: relative;
+}
+
+p.center_text:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+p.center_text:hover:before {
+    visibility: visible;
+    width: 100%;
+}

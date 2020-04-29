@@ -50,6 +50,23 @@
     opacity: 1; }
   100% {
     opacity: 0; } }
+p.center_text {
+  position: relative; }
+
+p.center_text:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out; }
+
+p.center_text:hover:before {
+  visibility: visible;
+  width: 100%; }
+
 header div, main, main .home_area .container .box_container, main .home_area .container .box_container div .box, footer, footer .footer_container, main div.menu_container .menu_area .item_1,
 main div.menu_container .menu_area .item_2,
 main div.menu_container .menu_area .item_3,
@@ -446,10 +463,16 @@ main div.menu_container {
       -webkit-text-fill-color: transparent; }
   main div.menu_container .chic_fr .item_1 {
     color: #cc6600; }
+    main div.menu_container .chic_fr .item_1 .divider .between_arrow p.center_text_color2:before {
+      background-color: #cc6600; }
   main div.menu_container .chic_fr .item_2 {
     color: #b479ea; }
+    main div.menu_container .chic_fr .item_2 .divider .between_arrow p.center_text_color2:before {
+      background-color: #b479ea; }
   main div.menu_container .chic_fr .dessert {
     color: #2e0f84; }
+    main div.menu_container .chic_fr .dessert .divider .between_arrow p.center_text_color2:before {
+      background-color: #2e0f84; }
   main div.menu_container .menu_title,
   main div.menu_container .below_title {
     text-align: center; }
@@ -471,14 +494,44 @@ main div.menu_container {
     main div.menu_container .menu_area .item_2 > .divider_line div hr,
     main div.menu_container .menu_area .item_3 > .divider_line div hr,
     main div.menu_container .menu_area .dessert > .divider_line div hr {
-      background-color: #480808;
       height: 4px;
-      width: 250px; }
+      width: 250px;
+      border: none; }
+    main div.menu_container .menu_area .item_1 > .divider_line div hr.line1,
+    main div.menu_container .menu_area .item_2 > .divider_line div hr.line1,
+    main div.menu_container .menu_area .item_3 > .divider_line div hr.line1,
+    main div.menu_container .menu_area .dessert > .divider_line div hr.line1 {
+      background-color: #480808; }
+    main div.menu_container .menu_area .item_1 > .divider_line div hr.line3,
+    main div.menu_container .menu_area .item_2 > .divider_line div hr.line3,
+    main div.menu_container .menu_area .item_3 > .divider_line div hr.line3,
+    main div.menu_container .menu_area .dessert > .divider_line div hr.line3 {
+      background-color: #0033cc; }
+    main div.menu_container .menu_area .item_1 > .divider_line div hr.line4,
+    main div.menu_container .menu_area .item_2 > .divider_line div hr.line4,
+    main div.menu_container .menu_area .item_3 > .divider_line div hr.line4,
+    main div.menu_container .menu_area .dessert > .divider_line div hr.line4 {
+      background-color: #339933; }
     main div.menu_container .menu_area .item_1 > .divider_line div p,
     main div.menu_container .menu_area .item_2 > .divider_line div p,
     main div.menu_container .menu_area .item_3 > .divider_line div p,
     main div.menu_container .menu_area .dessert > .divider_line div p {
       font-size: x-large; }
+    main div.menu_container .menu_area .item_1 > .divider_line div p.center_text_color1:before,
+    main div.menu_container .menu_area .item_2 > .divider_line div p.center_text_color1:before,
+    main div.menu_container .menu_area .item_3 > .divider_line div p.center_text_color1:before,
+    main div.menu_container .menu_area .dessert > .divider_line div p.center_text_color1:before {
+      background-color: #480808; }
+    main div.menu_container .menu_area .item_1 > .divider_line div p.center_text_color3:before,
+    main div.menu_container .menu_area .item_2 > .divider_line div p.center_text_color3:before,
+    main div.menu_container .menu_area .item_3 > .divider_line div p.center_text_color3:before,
+    main div.menu_container .menu_area .dessert > .divider_line div p.center_text_color3:before {
+      background-color: #0033cc; }
+    main div.menu_container .menu_area .item_1 > .divider_line div p.center_text_color4:before,
+    main div.menu_container .menu_area .item_2 > .divider_line div p.center_text_color4:before,
+    main div.menu_container .menu_area .item_3 > .divider_line div p.center_text_color4:before,
+    main div.menu_container .menu_area .dessert > .divider_line div p.center_text_color4:before {
+      background-color: #339933; }
     main div.menu_container .menu_area .item_1 > .divider_line div.center_line,
     main div.menu_container .menu_area .item_2 > .divider_line div.center_line,
     main div.menu_container .menu_area .item_3 > .divider_line div.center_line,
@@ -603,9 +656,6 @@ main div.menu_container {
       main div.menu_container .menu_area .item_2 .divider div.right_edge .arrow_right .triangle_1,
       main div.menu_container .menu_area .item_3 .divider div.right_edge .arrow_right .triangle_1,
       main div.menu_container .menu_area .dessert .divider div.right_edge .arrow_right .triangle_1 {
-        font-size: 0px;
-        line-height: 0%;
-        width: 0px;
         border-top: 0.4vw solid #fdf1f7;
         border-bottom: 0.4vw solid #fdf1f7;
         border-right: 4vw solid; }
@@ -613,9 +663,6 @@ main div.menu_container {
       main div.menu_container .menu_area .item_2 .divider div.right_edge .arrow_right .triangle_2,
       main div.menu_container .menu_area .item_3 .divider div.right_edge .arrow_right .triangle_2,
       main div.menu_container .menu_area .dessert .divider div.right_edge .arrow_right .triangle_2 {
-        font-size: 0px;
-        line-height: 0%;
-        width: 0px;
         border-left: 16vw solid;
         border-top: 0.4vw solid #fdf1f7;
         border-bottom: 0.4vw solid #fdf1f7; }
