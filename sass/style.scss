@@ -71,7 +71,7 @@ main {
         }
     }
     .home_area {
-        margin                                        : 10px 100px 200px 100px;
+        margin                                        : 20px 100px 200px 100px;
 
         @media (max-width: 1199.98px) {
             margin-left                               : 50px;
@@ -87,126 +87,134 @@ main {
             text-align                                : center;
 
             .box_container {
-                text-align                            : center;
+
                 @extend %wrapp;
-
-                .box {
-                    height                            : 765px;
-                    width                             : 33vw;
-                    max-width                         : 100%;
-                    overflow                          : hidden;
-                    margin                            : 40px 2.5vw;
-                    display                           : inline-block;
-                    border                            : 4px solid #a39f9f17;
-                    font-size                         : 20px;
-                    font-weight                       : bolder;
-                    text-decoration                   : none;
-
-                    &:hover {
-                        cursor                        : pointer;
-                    }
-
-                    @media (max-width: 1199.98px) {
-                        margin                        : 10px 10px;
-                        height                        : 643px;
-                    }
-
-                    @media (max-width: 991.98px) {
-                        height                        : 512px;
-                    }
-
-                    @media (max-width: 767.98px) {
-                        height                        : 375px;
-                    }
-
+                div {
+                    display: flex;
+                    justify-content: center;
                     @media (max-width: 575.98px) {
-                        width                         : 80%;
-                        height                        : 500px;
-                        font-size: x-large;
+                        flex-direction: column;
                     }
-                    .box_info {
-                        @include info_position;
-                        @include transition ($time    : 1.3s);
-
+                    .box {
+                        height                            : 765px;
+                        width                             : 500px;
+                        max-width                         : 100%;
+                        overflow                          : hidden;
+                        margin                            : 40px 2.5vw;
+                        border                            : 4px solid #a39f9f17;
+                        font-size                         : 20px;
+                        font-weight                       : bolder;
+                        text-decoration                   : none;                       
+    
                         &:hover {
-                            @include transform;
-                            opacity                   : 0.4;
+                            cursor                        : pointer;
                         }
-
-                        h2 {
-                            @include second_head;
+    
+                        @media (max-width: 1199.98px) {
+                            margin                        : 10px 10px;
+                            height                        : 643px;
                         }
+    
+                        @media (max-width: 991.98px) {
+                            height                        : 512px;
+                        }
+    
+                        @media (max-width: 767.98px) {
+                            height                        : 375px;
+                        }
+    
                         @media (max-width: 575.98px) {
+                            width                         : 80%;
+                            height                        : 500px;
                             font-size: x-large;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                        .box_info {
+                            flex-direction: column;
+                            @include info_position;
+                            @include transition ($time    : 1.3s);
+    
+                            &:hover {
+                                @include transform;
+                                opacity                   : 0.4;
+                            }
+    
+                            h2 {
+                                @include second_head;
+                            }
+                            @media (max-width: 575.98px) {
+                                font-size: x-large;
+                            }
+                        }
+                     
+                    }
+    
+                    .box_color1 {
+                        font-family                       : 'Pacifico', cursive;
+                        @include police_menu ($bck        : #ffcccc);
+    
+                        .box_info {
+    
+                            .fa-music {
+                                @include info_style ($lc  : #ff6666, $rc: #ff9966);
+                            }
+    
+                            .info_1,
+                            .menu_1 {
+                                color                     : #330000;
+                            }
+                        }
+    
+                    }
+    
+                    .box_color2 {
+                        font-family                       : 'Lobster', cursive;
+                        @include police_menu ($bck        : #f5d9d961);
+    
+                        .box_info {
+    
+                            .info_2 {
+                                @include info_style ($lc  : #cc9933, $rc: #330867);
+                            }
+    
+                            .menu_2 {
+                                color                     : #cc9933;
+                            }
+                        }
+     
+                    }
+    
+                    .box_color3 {
+                        font-family                       : 'Dancing Script', cursive;
+                        @include police_menu ($bck        : #a39f9f1f);
+    
+                        .box_info {
+                            
+                            .info_3 {
+                                @include info_style ($lc  : #0033cc, $rc: #99ccff);
+                            }
+    
+                            .menu_3 {
+                                color                     : #99ccff;
+    
+                            }  
                         }
                     }
-                 
-                }
-
-                .box_color1 {
-                    font-family                       : 'Pacifico', cursive;
-                    @include police_menu ($bck        : #ffcccc);
-
-                    .box_info {
-
-                        .fa-music {
-                            @include info_style ($lc  : #ff6666, $rc: #ff9966);
-                        }
-
-                        .info_1,
-                        .menu_1 {
-                            color                     : #330000;
-                        }
-                    }
-
-                }
-
-                .box_color2 {
-                    font-family                       : 'Lobster', cursive;
-                    @include police_menu ($bck        : #f5d9d961);
-
-                    .box_info {
-
-                        .info_2 {
-                            @include info_style ($lc  : #cc9933, $rc: #330867);
-                        }
-
-                        .menu_2 {
-                            color                     : #cc9933;
-                        }
-                    }
- 
-                }
-
-                .box_color3 {
-                    font-family                       : 'Dancing Script', cursive;
-                    @include police_menu ($bck        : #a39f9f1f);
-
-                    .box_info {
-                        
-                        .info_3 {
-                            @include info_style ($lc  : #0033cc, $rc: #99ccff);
-                        }
-
-                        .menu_3 {
-                            color                     : #99ccff;
-
-                        }  
-                    }
-                }
-
-                .box_color4 {
-                    font-family                       : 'Parisienne', cursive;
-                    @include police_menu ($bck        : #a39f9f08);
-
-                    .box_info {
-                        
-                        .info_4 {
-                            @include info_style;
-                        }
-
-                        .menu_4 {
-                            color                     : #339933;
+    
+                    .box_color4 {
+                        font-family                       : 'Parisienne', cursive;
+                        @include police_menu ($bck        : #a39f9f08);
+    
+                        .box_info {
+                            
+                            .info_4 {
+                                @include info_style;
+                            }
+    
+                            .menu_4 {
+                                color                     : #339933;
+                            }
                         }
                     }
                 }
