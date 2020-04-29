@@ -61,6 +61,7 @@ body {
   margin: auto;
   font-family: sans-serif; }
 
+/*-----------------------------------------HEADER--------------------------------------------*/
 header div {
   height: 245px;
   background-color: #669999;
@@ -87,6 +88,7 @@ header div {
       header div nav a:hover {
         color: white; }
 
+/*-----------------------------------------PAGE D'ACCEUIL--------------------------------------------*/
 main .home_area {
   margin: 100px 100px 200px 100px; }
   @media (max-width: 1199.98px) {
@@ -256,6 +258,7 @@ main .home_area {
           max-width: 70%;
           margin-top: 40px; } }
 
+/*-----------------------------------------FOOTER--------------------------------------------*/
 footer {
   position: fixed;
   bottom: 0;
@@ -309,6 +312,7 @@ footer {
         footer .footer_container div:last-child a:hover {
           color: white; }
 
+/*-----------------------------------------LES PAGES MENUS--------------------------------------------*/
 main div.menu_container {
   max-width: 946px;
   padding: 80px 125px 105px 125px;

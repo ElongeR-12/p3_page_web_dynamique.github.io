@@ -16,6 +16,8 @@ body {
     font-family                                       : sans-serif;
 }
 
+/*-----------------------------------------HEADER--------------------------------------------*/
+
 header div {
     @extend %wrapp;
     height                                            : 245px;
@@ -41,7 +43,7 @@ header div {
     }
 }
 
-
+/*-----------------------------------------PAGE D'ACCEUIL--------------------------------------------*/
 main {
     @extend %wrapp;
 
@@ -253,11 +255,8 @@ main {
 }
 
 
-// ANIMATION
 
-
-
-//footer
+/*-----------------------------------------FOOTER--------------------------------------------*/
 footer {
     position                                          : fixed;
     bottom                                            : 0;
@@ -310,8 +309,8 @@ footer {
     }
 }
 
+/*-----------------------------------------LES PAGES MENUS--------------------------------------------*/
 
-///PAGES
 main div.menu_container {
     max-width                                         : 946px;
     padding                                           : 80px 125px 105px 125px;
@@ -481,10 +480,6 @@ main div.menu_container {
         .menu_2_dessert {
             padding-left                              : 2.2rem;
         }
-
-
-
-
 
         .divider {
             width                                     : 100%;
