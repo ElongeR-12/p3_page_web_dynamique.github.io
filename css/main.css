@@ -128,11 +128,7 @@ main .home_area {
           main .home_area .container .box_container .box {
             width: 80%;
             height: 650px; } }
-      main .home_area .container .box_container .box_color1 {
-        font-family: 'Pacifico', cursive;
-        background-color: #ffcccc;
-        font-size: 3vw; }
-        main .home_area .container .box_container .box_color1 .box_info {
+        main .home_area .container .box_container .box .box_info {
           padding-top: 50%;
           margin: 0 auto;
           opacity: 1;
@@ -141,26 +137,30 @@ main .home_area {
           -moz-transition: 1.3s;
           -ms-transition: 1.3s;
           -o-transition: 1.3s; }
-          main .home_area .container .box_container .box_color1 .box_info:hover {
+          main .home_area .container .box_container .box .box_info:hover {
             transform: scale(1.2);
             -webkit-transform: scale(1.2);
             -moz-transform: scale(1.2);
             -ms-transform: scale(1.2);
             -o-transform: scale(1.2);
             opacity: 0.4; }
-          main .home_area .container .box_container .box_color1 .box_info h2 {
+          main .home_area .container .box_container .box .box_info h2 {
             color: #222;
             font-weight: 400;
             letter-spacing: 0.05em;
             margin: 40px auto;
             text-transform: uppercase; }
-          main .home_area .container .box_container .box_color1 .box_info .fa-music {
-            background: linear-gradient(to right, #ff6666 0%, #ff9966 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; }
-          main .home_area .container .box_container .box_color1 .box_info .info_1,
-          main .home_area .container .box_container .box_color1 .box_info .menu_1 {
-            color: #330000; }
+      main .home_area .container .box_container .box_color1 {
+        font-family: 'Pacifico', cursive;
+        background-color: #ffcccc;
+        font-size: 3vw; }
+        main .home_area .container .box_container .box_color1 .box_info .fa-music {
+          background: linear-gradient(to right, #ff6666 0%, #ff9966 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; }
+        main .home_area .container .box_container .box_color1 .box_info .info_1,
+        main .home_area .container .box_container .box_color1 .box_info .menu_1 {
+          color: #330000; }
         @media (max-width: 575.98px) {
           main .home_area .container .box_container .box_color1 {
             background-color: #f5d9d961;
@@ -169,34 +169,12 @@ main .home_area {
         font-family: 'Lobster', cursive;
         background-color: #f5d9d961;
         font-size: 3vw; }
-        main .home_area .container .box_container .box_color2 .box_info {
-          padding-top: 50%;
-          margin: 0 auto;
-          opacity: 1;
-          transition: 1.3s;
-          -webkit-transition: 1.3s;
-          -moz-transition: 1.3s;
-          -ms-transition: 1.3s;
-          -o-transition: 1.3s; }
-          main .home_area .container .box_container .box_color2 .box_info:hover {
-            transform: scale(1.2);
-            -webkit-transform: scale(1.2);
-            -moz-transform: scale(1.2);
-            -ms-transform: scale(1.2);
-            -o-transform: scale(1.2);
-            opacity: 0.4; }
-          main .home_area .container .box_container .box_color2 .box_info h2 {
-            color: #222;
-            font-weight: 400;
-            letter-spacing: 0.05em;
-            margin: 40px auto;
-            text-transform: uppercase; }
-          main .home_area .container .box_container .box_color2 .box_info .info_2 {
-            background: linear-gradient(to right, #cc9933 0%, #330867 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; }
-          main .home_area .container .box_container .box_color2 .box_info .menu_2 {
-            color: #cc9933; }
+        main .home_area .container .box_container .box_color2 .box_info .info_2 {
+          background: linear-gradient(to right, #cc9933 0%, #330867 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; }
+        main .home_area .container .box_container .box_color2 .box_info .menu_2 {
+          color: #cc9933; }
         @media (max-width: 575.98px) {
           main .home_area .container .box_container .box_color2 {
             background-color: #f5d9d961;
@@ -205,34 +183,12 @@ main .home_area {
         font-family: 'Dancing Script', cursive;
         background-color: #a39f9f1f;
         font-size: 3vw; }
-        main .home_area .container .box_container .box_color3 .box_info {
-          padding-top: 50%;
-          margin: 0 auto;
-          opacity: 1;
-          transition: 1.3s;
-          -webkit-transition: 1.3s;
-          -moz-transition: 1.3s;
-          -ms-transition: 1.3s;
-          -o-transition: 1.3s; }
-          main .home_area .container .box_container .box_color3 .box_info:hover {
-            transform: scale(1.2);
-            -webkit-transform: scale(1.2);
-            -moz-transform: scale(1.2);
-            -ms-transform: scale(1.2);
-            -o-transform: scale(1.2);
-            opacity: 0.4; }
-          main .home_area .container .box_container .box_color3 .box_info h2 {
-            color: #222;
-            font-weight: 400;
-            letter-spacing: 0.05em;
-            margin: 40px auto;
-            text-transform: uppercase; }
-          main .home_area .container .box_container .box_color3 .box_info .info_3 {
-            background: linear-gradient(to right, #0033cc 0%, #99ccff 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; }
-          main .home_area .container .box_container .box_color3 .box_info .menu_3 {
-            color: #99ccff; }
+        main .home_area .container .box_container .box_color3 .box_info .info_3 {
+          background: linear-gradient(to right, #0033cc 0%, #99ccff 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; }
+        main .home_area .container .box_container .box_color3 .box_info .menu_3 {
+          color: #99ccff; }
         @media (max-width: 575.98px) {
           main .home_area .container .box_container .box_color3 {
             background-color: #f5d9d961;
@@ -241,34 +197,12 @@ main .home_area {
         font-family: 'Parisienne', cursive;
         background-color: #a39f9f08;
         font-size: 3vw; }
-        main .home_area .container .box_container .box_color4 .box_info {
-          padding-top: 50%;
-          margin: 0 auto;
-          opacity: 1;
-          transition: 1.3s;
-          -webkit-transition: 1.3s;
-          -moz-transition: 1.3s;
-          -ms-transition: 1.3s;
-          -o-transition: 1.3s; }
-          main .home_area .container .box_container .box_color4 .box_info:hover {
-            transform: scale(1.2);
-            -webkit-transform: scale(1.2);
-            -moz-transform: scale(1.2);
-            -ms-transform: scale(1.2);
-            -o-transform: scale(1.2);
-            opacity: 0.4; }
-          main .home_area .container .box_container .box_color4 .box_info h2 {
-            color: #222;
-            font-weight: 400;
-            letter-spacing: 0.05em;
-            margin: 40px auto;
-            text-transform: uppercase; }
-          main .home_area .container .box_container .box_color4 .box_info .info_4 {
-            background: linear-gradient(to right, #339933 0%, #ccff66 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent; }
-          main .home_area .container .box_container .box_color4 .box_info .menu_4 {
-            color: #339933; }
+        main .home_area .container .box_container .box_color4 .box_info .info_4 {
+          background: linear-gradient(to right, #339933 0%, #ccff66 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; }
+        main .home_area .container .box_container .box_color4 .box_info .menu_4 {
+          color: #339933; }
         @media (max-width: 575.98px) {
           main .home_area .container .box_container .box_color4 {
             background-color: #f5d9d961;

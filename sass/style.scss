@@ -98,12 +98,6 @@ main {
                         width: 80%;
                         height: 650px;
                     }
-                }
-
-                .box_color1 {
-                    font-family                       : 'Pacifico', cursive;
-                    @include police_menu ($bck        : #ffcccc);
-
                     .box_info {
                         @include info_position;
                         @include transition ($time    : 1.3s);
@@ -116,6 +110,14 @@ main {
                         h2 {
                             @include second_head;
                         }
+                    }
+                }
+
+                .box_color1 {
+                    font-family                       : 'Pacifico', cursive;
+                    @include police_menu ($bck        : #ffcccc);
+
+                    .box_info {
 
                         .fa-music {
                             @include info_style ($lc  : #ff6666, $rc: #ff9966);
@@ -136,17 +138,6 @@ main {
                     @include police_menu ($bck        : #f5d9d961);
 
                     .box_info {
-                        @include info_position;
-                        @include transition ($time    : 1.3s);
-
-                        &:hover {
-                            @include transform;
-                            opacity                   : 0.4;
-                        }
-
-                        h2 {
-                            @include second_head;
-                        }
 
                         .info_2 {
                             @include info_style ($lc  : #cc9933, $rc: #330867);
@@ -166,18 +157,7 @@ main {
                     @include police_menu ($bck        : #a39f9f1f);
 
                     .box_info {
-                        @include info_position;
-                        @include transition ($time    : 1.3s);
-
-                        &:hover {
-                            @include transform;
-                            opacity                   : 0.4;
-                        }
-
-                        h2 {
-                            @include second_head;
-                        }
-
+                        
                         .info_3 {
                             @include info_style ($lc  : #0033cc, $rc: #99ccff);
                         }
@@ -197,18 +177,7 @@ main {
                     @include police_menu ($bck        : #a39f9f08);
 
                     .box_info {
-                        @include info_position;
-                        @include transition ($time    : 1.3s);
-
-                        &:hover {
-                            @include transform;
-                            opacity                   : 0.4;
-                        }
-
-                        h2 {
-                            @include second_head;
-                        }
-
+                        
                         .info_4 {
                             @include info_style;
                         }
