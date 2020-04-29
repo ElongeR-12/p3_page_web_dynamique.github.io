@@ -24,10 +24,9 @@
 }
 
 @mixin  animation {
-        animation                                         : wiggle 200ms infinite;
-        animation-timing-function                         : linear;
-        -webkit-animation                                 : wiggle 200ms infinite;
-    
+        animation: wiggle 200ms infinite;
+        animation-timing-function: linear;
+        -webkit-animation: wiggle 200ms infinite;
 }
 
 @mixin police_menu ($bck: #f5d9d961, $fs: 3vw){
@@ -59,6 +58,17 @@
 @mixin link_spec {
     font-style                            : normal;
     text-decoration                       : none;
-    font-size                             : 4vw;
+    font-size                             : 50px;
     font-weight                           : bold;
+  
+    @media (max-width: 991.98px) {
+        font-size                             : 40px;
+    }
+    @media (max-width: 767.98px) {
+        font-size                             : 30px;
+    }
+    @media (max-width: 575.98px) {
+        font-size                             : 20px;
+    }
+    
 }

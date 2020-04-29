@@ -1,12 +1,11 @@
 @import "./mixins.scss";
 
 .wiggle {
-    @include animation;
     @include transition;
 }
 
 .wiggle:hover {
-    animation                                         : none;
+    @include animation;
 }
 
 @keyframes wiggle {
