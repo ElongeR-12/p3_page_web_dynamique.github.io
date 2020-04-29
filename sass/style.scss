@@ -565,7 +565,7 @@ main div.menu_container {
             align-items                                   : center;
 
             div.left_edge {
-                @extend %wrapp;
+                overflow: hidden;
                 .arrow_left {
 
                     display                               : flex;
@@ -585,13 +585,13 @@ main div.menu_container {
             }
 
             div.center {
-                @extend %wrapp;
+                overflow: hidden;
                 text-align                                : center;
             }
             
 
             div.right_edge {
-                @extend %wrapp;
+                overflow: hidden;
                 .arrow_right {
 
                     display                               : flex;

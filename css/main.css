@@ -79,16 +79,7 @@ main div.menu_container .menu_area .item_3 .menu_info div,
 main div.menu_container .menu_area .dessert .menu_info div, main div.menu_container .menu_area .item_1 .divider,
 main div.menu_container .menu_area .item_2 .divider,
 main div.menu_container .menu_area .item_3 .divider,
-main div.menu_container .menu_area .dessert .divider, main div.menu_container .menu_area .item_1 .divider div.left_edge,
-main div.menu_container .menu_area .item_2 .divider div.left_edge,
-main div.menu_container .menu_area .item_3 .divider div.left_edge,
-main div.menu_container .menu_area .dessert .divider div.left_edge, main div.menu_container .menu_area .item_1 .divider div.center,
-main div.menu_container .menu_area .item_2 .divider div.center,
-main div.menu_container .menu_area .item_3 .divider div.center,
-main div.menu_container .menu_area .dessert .divider div.center, main div.menu_container .menu_area .item_1 .divider div.right_edge,
-main div.menu_container .menu_area .item_2 .divider div.right_edge,
-main div.menu_container .menu_area .item_3 .divider div.right_edge,
-main div.menu_container .menu_area .dessert .divider div.right_edge {
+main div.menu_container .menu_area .dessert .divider {
   width: 100%;
   margin: 0;
   overflow: hidden; }
@@ -623,48 +614,59 @@ main div.menu_container {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-    main div.menu_container .menu_area .item_1 .divider div.left_edge .arrow_left,
-    main div.menu_container .menu_area .item_2 .divider div.left_edge .arrow_left,
-    main div.menu_container .menu_area .item_3 .divider div.left_edge .arrow_left,
-    main div.menu_container .menu_area .dessert .divider div.left_edge .arrow_left {
-      display: flex; }
-      main div.menu_container .menu_area .item_1 .divider div.left_edge .arrow_left .triangle_1,
-      main div.menu_container .menu_area .item_2 .divider div.left_edge .arrow_left .triangle_1,
-      main div.menu_container .menu_area .item_3 .divider div.left_edge .arrow_left .triangle_1,
-      main div.menu_container .menu_area .dessert .divider div.left_edge .arrow_left .triangle_1 {
-        border-top: 0.4vw solid #fdf1f7;
-        border-bottom: 0.4vw solid #fdf1f7;
-        border-right: 16vw solid; }
-      main div.menu_container .menu_area .item_1 .divider div.left_edge .arrow_left .triangle_2,
-      main div.menu_container .menu_area .item_2 .divider div.left_edge .arrow_left .triangle_2,
-      main div.menu_container .menu_area .item_3 .divider div.left_edge .arrow_left .triangle_2,
-      main div.menu_container .menu_area .dessert .divider div.left_edge .arrow_left .triangle_2 {
-        border-left: 4vw solid;
-        border-top: 0.4vw solid #fdf1f7;
-        border-bottom: 0.4vw solid #fdf1f7; }
+    main div.menu_container .menu_area .item_1 .divider div.left_edge,
+    main div.menu_container .menu_area .item_2 .divider div.left_edge,
+    main div.menu_container .menu_area .item_3 .divider div.left_edge,
+    main div.menu_container .menu_area .dessert .divider div.left_edge {
+      overflow: hidden; }
+      main div.menu_container .menu_area .item_1 .divider div.left_edge .arrow_left,
+      main div.menu_container .menu_area .item_2 .divider div.left_edge .arrow_left,
+      main div.menu_container .menu_area .item_3 .divider div.left_edge .arrow_left,
+      main div.menu_container .menu_area .dessert .divider div.left_edge .arrow_left {
+        display: flex; }
+        main div.menu_container .menu_area .item_1 .divider div.left_edge .arrow_left .triangle_1,
+        main div.menu_container .menu_area .item_2 .divider div.left_edge .arrow_left .triangle_1,
+        main div.menu_container .menu_area .item_3 .divider div.left_edge .arrow_left .triangle_1,
+        main div.menu_container .menu_area .dessert .divider div.left_edge .arrow_left .triangle_1 {
+          border-top: 0.4vw solid #fdf1f7;
+          border-bottom: 0.4vw solid #fdf1f7;
+          border-right: 16vw solid; }
+        main div.menu_container .menu_area .item_1 .divider div.left_edge .arrow_left .triangle_2,
+        main div.menu_container .menu_area .item_2 .divider div.left_edge .arrow_left .triangle_2,
+        main div.menu_container .menu_area .item_3 .divider div.left_edge .arrow_left .triangle_2,
+        main div.menu_container .menu_area .dessert .divider div.left_edge .arrow_left .triangle_2 {
+          border-left: 4vw solid;
+          border-top: 0.4vw solid #fdf1f7;
+          border-bottom: 0.4vw solid #fdf1f7; }
     main div.menu_container .menu_area .item_1 .divider div.center,
     main div.menu_container .menu_area .item_2 .divider div.center,
     main div.menu_container .menu_area .item_3 .divider div.center,
     main div.menu_container .menu_area .dessert .divider div.center {
+      overflow: hidden;
       text-align: center; }
-    main div.menu_container .menu_area .item_1 .divider div.right_edge .arrow_right,
-    main div.menu_container .menu_area .item_2 .divider div.right_edge .arrow_right,
-    main div.menu_container .menu_area .item_3 .divider div.right_edge .arrow_right,
-    main div.menu_container .menu_area .dessert .divider div.right_edge .arrow_right {
-      display: flex; }
-      main div.menu_container .menu_area .item_1 .divider div.right_edge .arrow_right .triangle_1,
-      main div.menu_container .menu_area .item_2 .divider div.right_edge .arrow_right .triangle_1,
-      main div.menu_container .menu_area .item_3 .divider div.right_edge .arrow_right .triangle_1,
-      main div.menu_container .menu_area .dessert .divider div.right_edge .arrow_right .triangle_1 {
-        border-top: 0.4vw solid #fdf1f7;
-        border-bottom: 0.4vw solid #fdf1f7;
-        border-right: 4vw solid; }
-      main div.menu_container .menu_area .item_1 .divider div.right_edge .arrow_right .triangle_2,
-      main div.menu_container .menu_area .item_2 .divider div.right_edge .arrow_right .triangle_2,
-      main div.menu_container .menu_area .item_3 .divider div.right_edge .arrow_right .triangle_2,
-      main div.menu_container .menu_area .dessert .divider div.right_edge .arrow_right .triangle_2 {
-        border-left: 16vw solid;
-        border-top: 0.4vw solid #fdf1f7;
-        border-bottom: 0.4vw solid #fdf1f7; }
+    main div.menu_container .menu_area .item_1 .divider div.right_edge,
+    main div.menu_container .menu_area .item_2 .divider div.right_edge,
+    main div.menu_container .menu_area .item_3 .divider div.right_edge,
+    main div.menu_container .menu_area .dessert .divider div.right_edge {
+      overflow: hidden; }
+      main div.menu_container .menu_area .item_1 .divider div.right_edge .arrow_right,
+      main div.menu_container .menu_area .item_2 .divider div.right_edge .arrow_right,
+      main div.menu_container .menu_area .item_3 .divider div.right_edge .arrow_right,
+      main div.menu_container .menu_area .dessert .divider div.right_edge .arrow_right {
+        display: flex; }
+        main div.menu_container .menu_area .item_1 .divider div.right_edge .arrow_right .triangle_1,
+        main div.menu_container .menu_area .item_2 .divider div.right_edge .arrow_right .triangle_1,
+        main div.menu_container .menu_area .item_3 .divider div.right_edge .arrow_right .triangle_1,
+        main div.menu_container .menu_area .dessert .divider div.right_edge .arrow_right .triangle_1 {
+          border-top: 0.4vw solid #fdf1f7;
+          border-bottom: 0.4vw solid #fdf1f7;
+          border-right: 4vw solid; }
+        main div.menu_container .menu_area .item_1 .divider div.right_edge .arrow_right .triangle_2,
+        main div.menu_container .menu_area .item_2 .divider div.right_edge .arrow_right .triangle_2,
+        main div.menu_container .menu_area .item_3 .divider div.right_edge .arrow_right .triangle_2,
+        main div.menu_container .menu_area .dessert .divider div.right_edge .arrow_right .triangle_2 {
+          border-left: 16vw solid;
+          border-top: 0.4vw solid #fdf1f7;
+          border-bottom: 0.4vw solid #fdf1f7; }
 
 /*# sourceMappingURL=main.css.map */
