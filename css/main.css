@@ -110,7 +110,7 @@ main form {
     margin-left: 0;
     font-size: large; }
 main .home_area {
-  margin: 100px 100px 200px 100px; }
+  margin: 10px 100px 200px 100px; }
   @media (max-width: 1199.98px) {
     main .home_area {
       margin-left: 50px;
