@@ -149,7 +149,7 @@ main .home_area {
         @media (max-width: 575.98px) {
           main .home_area .container .box_container .box {
             width: 80%;
-            height: 650px;
+            height: 500px;
             font-size: x-large; } }
         main .home_area .container .box_container .box .box_info {
           padding-top: 50%;
@@ -160,6 +160,9 @@ main .home_area {
           -moz-transition: 1.3s;
           -ms-transition: 1.3s;
           -o-transition: 1.3s; }
+          @media (max-width: 575.98px) {
+            main .home_area .container .box_container .box .box_info {
+              padding-top: 30%; } }
           main .home_area .container .box_container .box .box_info:hover {
             transform: scale(1.2);
             -webkit-transform: scale(1.2);

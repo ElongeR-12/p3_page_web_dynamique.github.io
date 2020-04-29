@@ -39,6 +39,9 @@
     padding-top: 50%;
     margin: 0 auto;
     opacity                       : 1;
+    @media (max-width: 575.98px) {
+        padding-top: 30%;
+    }
 }
 
 @mixin  second_head {
