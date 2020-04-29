@@ -46,7 +46,30 @@ header div {
 /*-----------------------------------------PAGE D'ACCEUIL--------------------------------------------*/
 main {
     @extend %wrapp;
-
+    form {
+        display: flex;
+        height: 40px;
+        width: 100%;
+        background: #dbd8d5;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-bottom: 5px;
+        input {
+            border: none;
+            border-radius: 5px;
+            width: 40vw;
+            padding-left: 20px;
+            font-size: large;
+        }
+        button {
+            background:#f4f9f9;
+            border: none;
+            border-radius: 5px;
+            width: 80px;
+            margin-left: 0;
+            font-size: large;
+        }
+    }
     .home_area {
         margin                                        : 100px 100px 200px 100px;
 

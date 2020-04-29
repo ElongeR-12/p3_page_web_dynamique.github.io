@@ -88,6 +88,27 @@ header div {
         color: white; }
 
 /*-----------------------------------------PAGE D'ACCEUIL--------------------------------------------*/
+main form {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  background: #dbd8d5;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px; }
+  main form input {
+    border: none;
+    border-radius: 5px;
+    width: 40vw;
+    padding-left: 20px;
+    font-size: large; }
+  main form button {
+    background: #f4f9f9;
+    border: none;
+    border-radius: 5px;
+    width: 80px;
+    margin-left: 0;
+    font-size: large; }
 main .home_area {
   margin: 100px 100px 200px 100px; }
   @media (max-width: 1199.98px) {
