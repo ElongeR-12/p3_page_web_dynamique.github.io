@@ -470,8 +470,8 @@ main div.menu_container {
             div {
                 @extend %wrapp;
                 hr {
-                    box-shadow                                : 1px 0 2px 1px #330000;
-                    color                                     : #330000;
+                    background-color: #480808;
+                    height: 4px;
                     width: 250px;      
                 }
                 p {

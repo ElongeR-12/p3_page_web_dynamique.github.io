@@ -471,8 +471,8 @@ main div.menu_container {
     main div.menu_container .menu_area .item_2 > .divider_line div hr,
     main div.menu_container .menu_area .item_3 > .divider_line div hr,
     main div.menu_container .menu_area .dessert > .divider_line div hr {
-      box-shadow: 1px 0 2px 1px #330000;
-      color: #330000;
+      background-color: #480808;
+      height: 4px;
       width: 250px; }
     main div.menu_container .menu_area .item_1 > .divider_line div p,
     main div.menu_container .menu_area .item_2 > .divider_line div p,
