@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&family=Pacifico&family=Parisienne&display=swap");
 /*-----------------------------------------HEADER--------------------------------------------*/
-header div, footer, footer .footer_container, main, main .home_area .container .box_container, main div.menu_container .menu_area .item_1,
+header div, footer, main, main .home_area .container .box_container, main div.menu_container .menu_area .item_1,
 main div.menu_container .menu_area .item_2,
 main div.menu_container .menu_area .item_3,
 main div.menu_container .menu_area .dessert, main div.menu_container .menu_area .item_1 > .divider_line div,
@@ -18,15 +18,21 @@ main div.menu_container .menu_area .dessert .divider {
   overflow: hidden; }
 
 header div {
-  height: 100px;
+  height: 60px;
   background-color: #669999;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding-left: 0; }
   header div nav {
-    font-size: 50px;
-    font-weight: 600;
-    margin-top: 3vh;
-    margin-bottom: 2vh; }
+    font-size: 40px;
+    font-weight: 600; }
     header div nav a {
       text-decoration: none;
       color: #ffcc33;
@@ -104,7 +110,7 @@ header div {
   100% {
     opacity: 0; } }
 /*-----------------------------------------HEADER--------------------------------------------*/
-header div, footer, footer .footer_container, main, main .home_area .container .box_container, main div.menu_container .menu_area .item_1,
+header div, footer, main, main .home_area .container .box_container, main div.menu_container .menu_area .item_1,
 main div.menu_container .menu_area .item_2,
 main div.menu_container .menu_area .item_3,
 main div.menu_container .menu_area .dessert, main div.menu_container .menu_area .item_1 > .divider_line div,
@@ -122,15 +128,21 @@ main div.menu_container .menu_area .dessert .divider {
   overflow: hidden; }
 
 header div {
-  height: 100px;
+  height: 60px;
   background-color: #669999;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding-left: 0; }
   header div nav {
-    font-size: 50px;
-    font-weight: 600;
-    margin-top: 3vh;
-    margin-bottom: 2vh; }
+    font-size: 40px;
+    font-weight: 600; }
     header div nav a {
       text-decoration: none;
       color: #ffcc33;
@@ -181,7 +193,7 @@ header div {
   100% {
     -webkit-transform: translate(2px, 0);
     transform: translate(2px, 0); } }
-header div, footer, footer .footer_container, main, main .home_area .container .box_container, main div.menu_container .menu_area .item_1,
+header div, footer, main, main .home_area .container .box_container, main div.menu_container .menu_area .item_1,
 main div.menu_container .menu_area .item_2,
 main div.menu_container .menu_area .item_3,
 main div.menu_container .menu_area .dessert, main div.menu_container .menu_area .item_1 > .divider_line div,
@@ -201,55 +213,34 @@ main div.menu_container .menu_area .dessert .divider {
 footer {
   position: fixed;
   bottom: 0;
-  height: 100px;
-  background-color: #669999; }
-  footer .footer_container {
-    padding-top: 25px;
-    padding-bottom: 25px; }
-    footer .footer_container div:first-child {
-      float: left;
-      width: 50%;
-      padding-left: 0;
-      background-color: #669999;
-      border: none; }
-      footer .footer_container div:first-child a {
-        color: #ffcc33;
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-        font-style: normal;
-        text-decoration: none;
-        font-size: 1em;
-        font-weight: bold;
-        float: left;
-        padding-left: 30px; }
-        footer .footer_container div:first-child a:hover {
-          color: white; }
-    footer .footer_container div:last-child {
-      float: right;
-      width: 50%;
-      padding-right: 0;
-      background-color: #669999;
-      border: none; }
-      footer .footer_container div:last-child a {
-        color: #ffcc33;
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-        font-style: normal;
-        text-decoration: none;
-        font-size: 1em;
-        font-weight: bold;
-        float: right;
-        padding-right: 30px; }
-        footer .footer_container div:last-child a:hover {
-          color: white; }
+  height: 60px;
+  background-color: #669999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  footer a {
+    color: #ffcc33;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px; }
+    footer a:hover {
+      color: white; }
 
-header div, footer, footer .footer_container, main, main .home_area .container .box_container, main div.menu_container .menu_area .item_1,
+header div, footer, main, main .home_area .container .box_container, main div.menu_container .menu_area .item_1,
 main div.menu_container .menu_area .item_2,
 main div.menu_container .menu_area .item_3,
 main div.menu_container .menu_area .dessert, main div.menu_container .menu_area .item_1 > .divider_line div,
@@ -270,7 +261,7 @@ main form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 40px;
+  height: 30px;
   width: 100%;
   background: #dbd8d5;
   padding-top: 5px;
@@ -290,7 +281,7 @@ main form {
     margin-left: 0;
     font-size: large; }
 main .home_area {
-  margin: 20px 100px 200px 100px; }
+  margin: 20px 100px 100px 100px; }
   @media (max-width: 1199.98px) {
     main .home_area {
       margin-left: 50px;
@@ -442,8 +433,8 @@ main .home_area {
         main .home_area .container .wrapper {
           display: none; } }
     main .home_area .container button {
-      width: 550px;
-      height: 80px;
+      width: 600px;
+      height: 50px;
       background-color: #669999;
       max-width: 100%;
       border: none;
@@ -453,7 +444,7 @@ main .home_area {
       -moz-border-radius: 20px;
       -ms-border-radius: 20px;
       -o-border-radius: 20px;
-      font-size: 3.5vw;
+      font-size: 2.5vw;
       font-weight: bold;
       -webkit-transition: 1.5s;
       -o-transition: 1.5s;
@@ -474,20 +465,16 @@ main .home_area {
         border: none; }
       @media (max-width: 1199.98px) {
         main .home_area .container button {
-          width: 551px;
-          height: 99px; } }
+          width: 551px; } }
       @media (max-width: 991.98px) {
         main .home_area .container button {
-          width: 439px;
-          height: 79px; } }
+          width: 439px; } }
       @media (max-width: 767.98px) {
         main .home_area .container button {
-          width: 324px;
-          height: 58px; } }
+          width: 324px; } }
       @media (max-width: 575.98px) {
         main .home_area .container button {
-          max-width: 70%;
-          margin-top: 40px; } }
+          max-width: 70%; } }
 
 /*-----------------------------------------FOOTER--------------------------------------------*/
 .wiggle {
@@ -523,7 +510,7 @@ main .home_area {
   100% {
     -webkit-transform: translate(2px, 0);
     transform: translate(2px, 0); } }
-header div, footer, footer .footer_container, main, main .home_area .container .box_container, main div.menu_container .menu_area .item_1,
+header div, footer, main, main .home_area .container .box_container, main div.menu_container .menu_area .item_1,
 main div.menu_container .menu_area .item_2,
 main div.menu_container .menu_area .item_3,
 main div.menu_container .menu_area .dessert, main div.menu_container .menu_area .item_1 > .divider_line div,
@@ -543,57 +530,36 @@ main div.menu_container .menu_area .dessert .divider {
 footer {
   position: fixed;
   bottom: 0;
-  height: 100px;
-  background-color: #669999; }
-  footer .footer_container {
-    padding-top: 25px;
-    padding-bottom: 25px; }
-    footer .footer_container div:first-child {
-      float: left;
-      width: 50%;
-      padding-left: 0;
-      background-color: #669999;
-      border: none; }
-      footer .footer_container div:first-child a {
-        color: #ffcc33;
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-        font-style: normal;
-        text-decoration: none;
-        font-size: 1em;
-        font-weight: bold;
-        float: left;
-        padding-left: 30px; }
-        footer .footer_container div:first-child a:hover {
-          color: white; }
-    footer .footer_container div:last-child {
-      float: right;
-      width: 50%;
-      padding-right: 0;
-      background-color: #669999;
-      border: none; }
-      footer .footer_container div:last-child a {
-        color: #ffcc33;
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-        font-style: normal;
-        text-decoration: none;
-        font-size: 1em;
-        font-weight: bold;
-        float: right;
-        padding-right: 30px; }
-        footer .footer_container div:last-child a:hover {
-          color: white; }
+  height: 60px;
+  background-color: #669999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  footer a {
+    color: #ffcc33;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px; }
+    footer a:hover {
+      color: white; }
 
 /*-----------------------------------------LES PAGES MENUS--------------------------------------------*/
 /*-----------------------------------------HEADER--------------------------------------------*/
-header div, footer, footer .footer_container, main, main .home_area .container .box_container, main div.menu_container .menu_area .item_1,
+header div, footer, main, main .home_area .container .box_container, main div.menu_container .menu_area .item_1,
 main div.menu_container .menu_area .item_2,
 main div.menu_container .menu_area .item_3,
 main div.menu_container .menu_area .dessert, main div.menu_container .menu_area .item_1 > .divider_line div,
@@ -611,15 +577,21 @@ main div.menu_container .menu_area .dessert .divider {
   overflow: hidden; }
 
 header div {
-  height: 100px;
+  height: 60px;
   background-color: #669999;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding-left: 0; }
   header div nav {
-    font-size: 50px;
-    font-weight: 600;
-    margin-top: 3vh;
-    margin-bottom: 2vh; }
+    font-size: 40px;
+    font-weight: 600; }
     header div nav a {
       text-decoration: none;
       color: #ffcc33;
@@ -670,7 +642,7 @@ header div {
   100% {
     -webkit-transform: translate(2px, 0);
     transform: translate(2px, 0); } }
-header div, footer, footer .footer_container, main, main .home_area .container .box_container, main div.menu_container .menu_area .item_1,
+header div, footer, main, main .home_area .container .box_container, main div.menu_container .menu_area .item_1,
 main div.menu_container .menu_area .item_2,
 main div.menu_container .menu_area .item_3,
 main div.menu_container .menu_area .dessert, main div.menu_container .menu_area .item_1 > .divider_line div,
@@ -690,53 +662,32 @@ main div.menu_container .menu_area .dessert .divider {
 footer {
   position: fixed;
   bottom: 0;
-  height: 100px;
-  background-color: #669999; }
-  footer .footer_container {
-    padding-top: 25px;
-    padding-bottom: 25px; }
-    footer .footer_container div:first-child {
-      float: left;
-      width: 50%;
-      padding-left: 0;
-      background-color: #669999;
-      border: none; }
-      footer .footer_container div:first-child a {
-        color: #ffcc33;
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-        font-style: normal;
-        text-decoration: none;
-        font-size: 1em;
-        font-weight: bold;
-        float: left;
-        padding-left: 30px; }
-        footer .footer_container div:first-child a:hover {
-          color: white; }
-    footer .footer_container div:last-child {
-      float: right;
-      width: 50%;
-      padding-right: 0;
-      background-color: #669999;
-      border: none; }
-      footer .footer_container div:last-child a {
-        color: #ffcc33;
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-        font-style: normal;
-        text-decoration: none;
-        font-size: 1em;
-        font-weight: bold;
-        float: right;
-        padding-right: 30px; }
-        footer .footer_container div:last-child a:hover {
-          color: white; }
+  height: 60px;
+  background-color: #669999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  footer a {
+    color: #ffcc33;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-style: normal;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-right: 15px; }
+    footer a:hover {
+      color: white; }
 
 p.center_text {
   position: relative; }
@@ -757,7 +708,7 @@ p.center_text:hover:before {
   visibility: visible;
   width: 100%; }
 
-header div, footer, footer .footer_container, main, main .home_area .container .box_container, main div.menu_container .menu_area .item_1,
+header div, footer, main, main .home_area .container .box_container, main div.menu_container .menu_area .item_1,
 main div.menu_container .menu_area .item_2,
 main div.menu_container .menu_area .item_3,
 main div.menu_container .menu_area .dessert, main div.menu_container .menu_area .item_1 > .divider_line div,

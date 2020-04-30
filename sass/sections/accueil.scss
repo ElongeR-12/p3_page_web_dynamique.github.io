@@ -19,7 +19,7 @@ main {
         display                                           : -webkit-box;
         display                                           : -ms-flexbox;
         display                                           : flex;
-        height                                            : 40px;
+        height                                            : 30px;
         width                                             : 100%;
         background                                        : $customised_light_color;
         padding-top                                       : 5px;
@@ -42,7 +42,7 @@ main {
         }
     }
     .home_area {
-        margin                                            : 20px 100px 200px 100px;
+        margin                                            : 20px 100px 100px 100px;
 
         @media (max-width: 1199.98px) {
             margin-left                                   : 50px;
@@ -224,13 +224,13 @@ main {
             }
 
             button {
-                width                                     : 550px;
-                height                                    : 80px;
+                width                                     : 600px;
+                height                                    : 50px;
                 background-color                          : $customised_info_color;
                 max-width                                 : 100%;
                 border                                    : none;
                 @include link($size                       : 20px);
-                font-size                                 : 3.5vw;
+                font-size                                 : 2.5vw;
                 font-weight                               : bold;
                 -webkit-transition                                : 1.5s;
                 -o-transition                                : 1.5s;
@@ -246,22 +246,18 @@ main {
 
                 @media (max-width: 1199.98px) {
                     width                                 : 551px;
-                    height                                : 99px;
                 }
 
                 @media (max-width: 991.98px) {
                     width                                 : 439px;
-                    height                                : 79px;
                 }
 
                 @media (max-width: 767.98px) {
                     width                                 : 324px;
-                    height                                : 58px;
                 }
 
                 @media (max-width: 575.98px) {
                     max-width                             : 70%;
-                    margin-top                            : 40px;
                 }
             }
         }

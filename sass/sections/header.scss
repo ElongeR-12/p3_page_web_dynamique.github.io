@@ -4,31 +4,37 @@
 
 
 %wrapp {
-    width                                                 : 100%;
-    margin                                                : 0;
-    overflow                                              : hidden;
+    width                     : 100%;
+    margin                    : 0;
+    overflow                  : hidden;
 }
 
 header div {
     @extend %wrapp;
-    height                                                : 100px;
-    background-color                                      : $customised_info_color;
-    text-align                                            : center;
-    padding-left                                          : 0;
+    height                    : 60px;
+    background-color          : $customised_info_color;
+    display                   : -webkit-box;
+    display                   : -ms-flexbox;
+    display                   : flex;
+    -webkit-box-align         : center;
+    -ms-flex-align            : center;
+    align-items               : center;
+    -webkit-box-pack          : center;
+    -ms-flex-pack             : center;
+    justify-content           : center;
+    padding-left              : 0;
 
     nav {
-        font-size                                         : 50px;
-        font-weight                                       : 600;
-        margin-top                                        : 3vh;
-        margin-bottom                                     : 2vh;
+        font-size             : 40px;
+        font-weight           : 600;
 
         a {
-            text-decoration                               : none;
+            text-decoration   : none;
             @include link;
             @include transition;
 
             &:hover {
-                color                                     : $invert_color;
+                color         : $invert_color;
             }
         }
     }
