@@ -1,0 +1,35 @@
+/*-----------------------------------------HEADER--------------------------------------------*/
+@import "../variables/colors.scss";
+@import "../library_sass/mixins.scss";
+
+
+%wrapp {
+    width                                                 : 100%;
+    margin                                                : 0;
+    overflow                                              : hidden;
+}
+
+header div {
+    @extend %wrapp;
+    height                                                : 100px;
+    background-color                                      : $customised_info_color;
+    text-align                                            : center;
+    padding-left                                          : 0;
+
+    nav {
+        font-size                                         : 50px;
+        font-weight                                       : 600;
+        margin-top                                        : 3vh;
+        margin-bottom                                     : 2vh;
+
+        a {
+            text-decoration                               : none;
+            @include link;
+            @include transition;
+
+            &:hover {
+                color                                     : $invert_color;
+            }
+        }
+    }
+}

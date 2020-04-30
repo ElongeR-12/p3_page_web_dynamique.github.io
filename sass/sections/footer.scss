@@ -1,0 +1,62 @@
+/*-----------------------------------------FOOTER--------------------------------------------*/
+@import "../variables/colors.scss";
+@import "../library_sass/wigle.scss"; 
+
+%wrapp {
+    width                                                 : 100%;
+    margin                                                : 0;
+    overflow                                              : hidden;
+}
+
+
+footer {
+    position                                              : fixed;
+    bottom                                                : 0;
+    @extend %wrapp;
+    height                                                : 100px;
+    background-color                                      : $customised_info_color;
+
+    .footer_container {
+       @extend %wrapp; 
+        padding-top                                       : 25px;
+        padding-bottom                                    : 25px;
+
+        div:first-child {
+            float                                         : left;
+            width                                         : 50%;
+            padding-left                                  : 0;
+            background-color                              : $customised_info_color;
+            border                                        : none;
+
+            a {
+                @include link;
+                @include link_spec;
+                float                                     : left;
+                padding-left                              : 30px;
+
+                &:hover {
+                    color                                 : $invert_color;
+                }
+            }
+        }
+
+        div:last-child {
+            float                                         : right;
+            width                                         : 50%;
+            padding-right                                 : 0;
+            background-color                              : $customised_info_color;
+            border                                        : none;
+
+            a {
+                @include link;
+                @include link_spec;
+                float                                     : right;
+                padding-right                             : 30px;
+
+                &:hover {
+                    color                                 : $invert_color;
+                }
+            }
+        }
+    }
+}

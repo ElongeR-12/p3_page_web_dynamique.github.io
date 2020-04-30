@@ -1,0 +1,82 @@
+@import "../variables/colors.scss";
+
+@mixin  link ($size:5px){
+    color                           : $warning2_color;
+    border-radius                   : $size;
+    -webkit-border-radius           : $size;
+    -moz-border-radius              : $size;
+    -ms-border-radius               : $size;
+    -o-border-radius                : $size;
+}
+
+@mixin  transition ($time: 1.5s){
+    transition                      : $time;
+    -webkit-transition              : $time;
+    -moz-transition                 : $time;
+    -ms-transition                  : $time;
+    -o-transition                   : $time;
+}
+
+@mixin transform ($zoom: 1.2) {
+    transform                       : scale($zoom);
+    -webkit-transform               : scale($zoom);
+    -moz-transform                  : scale($zoom);
+    -ms-transform                   : scale($zoom);
+    -o-transform                    : scale($zoom);
+}
+
+@mixin  animation {
+        animation                   : wiggle 200ms infinite;
+        animation-timing-function   : linear;
+        -webkit-animation           : wiggle 200ms infinite;
+}
+
+@mixin police_menu ($bck: $customised_violet_color, $fs: 3vw){
+    background-color                : $bck;
+    font-size                       : $fs;
+}
+
+@mixin info_position {
+    
+    padding-top                     : 50%;
+    margin                          : 0 auto;
+    opacity                         : 1;
+    @media (max-width: 991.98px) {
+        padding-top                 : 30%;
+    }
+    @media (max-width: 575.98px) {
+        padding-top                 : 40%;
+    }
+}
+
+@mixin  second_head {
+    color                           : #222;
+    font-weight                     : 400;
+    letter-spacing                  : 0.05em;
+    margin                          : 40px auto;
+    text-transform                  : uppercase;
+}
+
+@mixin info_style ($lc: $success_color, $rc: $customised_lighted_success_color){
+    background                      : linear-gradient(to right, $lc 0%, $rc 100%);
+    -webkit-background-clip         : text;
+    -webkit-text-fill-color         : transparent;
+}
+
+@mixin link_spec {
+    font-style                      : normal;
+    text-decoration                 : none;
+    font-size                       : 50px;
+    font-weight                     : bold;
+  
+    @media (max-width: 991.98px) {
+        font-size                   : 40px;
+    }
+    @media (max-width: 767.98px) {
+        font-size                   : 30px;
+    }
+    @media (max-width: 575.98px) {
+        font-size                   : 20px;
+    }
+    
+}

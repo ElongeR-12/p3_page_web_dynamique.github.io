@@ -1,0 +1,255 @@
+/*-----------------------------------------PAGE D'ACCEUIL--------------------------------------------*/
+@import "../variables/colors.scss";
+@import "../variables/polices.scss";
+@import "../library_sass/mixins.scss";
+@import "../library_sass/loader.scss";
+@import "./header.scss";
+@import "./footer.scss";
+
+%wrapp {
+    width                                                 : 100%;
+    margin                                                : 0;
+    overflow                                              : hidden;
+}
+
+
+main {
+    @extend %wrapp;
+    form {
+        display                                           : flex;
+        height                                            : 40px;
+        width                                             : 100%;
+        background                                        : $customised_light_color;
+        padding-top                                       : 5px;
+        padding-left                                      : 5px;
+        padding-bottom                                    : 5px;
+        input {
+            border                                        : none;
+            border-radius                                 : 5px;
+            width                                         : 40vw;
+            padding-left                                  : 20px;
+            font-size                                     : large;
+        }
+        button {
+            background                                    : $customised_azure_color;
+            border                                        : none;
+            border-radius                                 : 5px;
+            width                                         : 80px;
+            margin-left                                   : 0;
+            font-size                                     : large;
+        }
+    }
+    .home_area {
+        margin                                            : 20px 100px 200px 100px;
+
+        @media (max-width: 1199.98px) {
+            margin-left                                   : 50px;
+            margin-right                                  : 50px;
+        }
+
+        @media (max-width: 991.98px) {
+            margin-left                                   : 0px;
+            margin-right                                  : 0px
+        }
+        
+        .container {
+            text-align                                    : center;
+
+            .box_container {
+
+                @extend %wrapp;
+                div {
+                    display                               : flex;
+                    justify-content                       : center;
+                    @media (max-width: 575.98px) {
+                        flex-direction                    : column;
+                    }
+                    .box {
+                        height                            : 765px;
+                        width                             : 500px;
+                        width                                                 : 100%;
+                      
+                        overflow                                              : hidden;
+                        margin                            : 40px 2.5vw;
+                        border                            : 4px solid $customised_dark_color;
+                        font-size                         : x-large;
+                        font-weight                       : bolder;
+                        text-decoration                   : none;
+    
+                        &:hover {
+                            cursor                        : pointer;
+                        }
+    
+                        @media (max-width: 1199.98px) {
+                            margin                        : 10px 10px;
+                            height                        : 643px;
+                        }
+    
+                        @media (max-width: 991.98px) {
+                            height                        : 512px;
+                        }
+    
+                        @media (max-width: 767.98px) {
+                            height                        : 375px;
+                        }
+    
+                        @media (max-width: 575.98px) {
+                            width                         : 80%;
+                            height                        : 500px;
+                            margin-left                   : auto;
+                            margin-right                  : auto;
+                        }
+                        .box_info {
+                            flex-direction                : column;
+                            @include info_position;
+                            @include transition ($time    : 1.3s);
+    
+                            &:hover {
+                                @include transform;
+                                opacity                   : 0.4;
+                            }
+    
+                            h2 {
+                                @include second_head;
+                            }
+                            @media (max-width: 575.98px) {
+                                font-size                 : x-large;
+                            }
+                        }
+                     
+                    }
+    
+                    .box_color1 {
+                        font-family                       : $font-family1;
+                        @include police_menu ($bck        : $customised_lighted_purple_color);
+    
+                        .box_info {
+    
+                            .fa-music {
+                                @include info_style ($lc  : $customised_lighted_red_color, $rc: $customised_warning_color);
+                            }
+    
+                            .info_1,
+                            .menu_1 {
+                                color                     : $customised_darkeen_red_color;
+                            }
+                        }
+    
+                    }
+    
+                    .box_color2 {
+                        font-family                       : $font-family2;
+                        @include police_menu ($bck        : $customised_violet_color);
+    
+                        .box_info {
+    
+                            .info_2 {
+                                @include info_style ($lc  : $warning_color, $rc: $customised_darkeen_primary_color);
+                            }
+    
+                            .menu_2 {
+                                color                     : $warning_color;
+                            }
+                        }
+     
+                    }
+    
+                    .box_color3 {
+                        font-family                       : $font-family3;
+                        @include police_menu ($bck        : $customised_dark2_color);
+    
+                        .box_info {
+                            
+                            .info_3 {
+                                @include info_style ($lc  : $primary_color, $rc: $customised_info2_color);
+                            }
+    
+                            .menu_3 {
+                                color                     : $customised_info2_color;
+    
+                            }  
+                        }
+                    }
+    
+                    .box_color4 {
+                        font-family                       : $font-family4;
+                        @include police_menu ($bck        : $customised_dark3_color);
+    
+                        .box_info {
+                            
+                            .info_4 {
+                                @include info_style;
+                            }
+    
+                            .menu_4 {
+                                color                     : $success_color;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .wrapper {
+                width                                     : 180px;
+                margin-left                               : auto;
+                margin-right                              : auto;
+
+                .circle {
+                    border-radius                         : 50%;
+                    border                                : 3px $customised_light_color solid;
+                    float                                 : left;
+                    height                                : 40px;
+                    width                                 : 40px;
+                    margin-bottom                         : 10px;
+                    background-color                      : $customised_info3_color;
+                }
+
+                @media (max-width: 575.98px) {
+                    display                               : none;
+                }
+
+            }
+
+            button {
+                width                                     : 550px;
+                height                                    : 80px;
+                background-color                          : $customised_info_color;
+                max-width                                 : 100%;
+                border                                    : none;
+                @include link($size                       : 20px);
+                font-size                                 : 3.5vw;
+                font-weight                               : bold;
+                transition                                : 1.5s;
+                @include transition;
+
+                &:hover {
+                    @include transform ($zoom             : 1.01);
+                    cursor                                : pointer;
+                    color                                 : $invert_color;
+                    border                                : none;
+                }
+
+                @media (max-width: 1199.98px) {
+                    width                                 : 551px;
+                    height                                : 99px;
+                }
+
+                @media (max-width: 991.98px) {
+                    width                                 : 439px;
+                    height                                : 79px;
+                }
+
+                @media (max-width: 767.98px) {
+                    width                                 : 324px;
+                    height                                : 58px;
+                }
+
+                @media (max-width: 575.98px) {
+                    max-width                             : 70%;
+                    margin-top                            : 40px;
+                }
+            }
+        }
+    }
+}
