@@ -16,6 +16,8 @@
 main {
     @extend %wrapp;
     form {
+        display                                           : -webkit-box;
+        display                                           : -ms-flexbox;
         display                                           : flex;
         height                                            : 40px;
         width                                             : 100%;
@@ -59,11 +61,18 @@ main {
 
                 @extend %wrapp;
                 div {
+                    display                               : -webkit-box;
+                    display                               : -ms-flexbox;
                     display                               : flex;
-                    justify-content                       : center;
-                    @media (max-width: 575.98px) {
-                        flex-direction                    : column;
-                    }
+                    -webkit-box-pack                       : center;
+                        -ms-flex-pack                       : center;
+                            justify-content                       : center;
+                            @media (max-width: 575.98px) {
+                                -webkit-box-orient                    : vertical;
+                                -webkit-box-direction                    : normal;
+                                    -ms-flex-direction                    : column;
+                                        flex-direction                    : column;
+                            }
                     .box {
                         height                            : 765px;
                         width                             : 500px;
@@ -100,7 +109,10 @@ main {
                             margin-right                  : auto;
                         }
                         .box_info {
-                            flex-direction                : column;
+                            -webkit-box-orient                : vertical;
+                            -webkit-box-direction                : normal;
+                                -ms-flex-direction                : column;
+                                    flex-direction                : column;
                             @include info_position;
                             @include transition ($time    : 1.3s);
     
@@ -220,6 +232,8 @@ main {
                 @include link($size                       : 20px);
                 font-size                                 : 3.5vw;
                 font-weight                               : bold;
+                -webkit-transition                                : 1.5s;
+                -o-transition                                : 1.5s;
                 transition                                : 1.5s;
                 @include transition;
 

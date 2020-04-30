@@ -147,9 +147,15 @@ main div.menu_container {
         @extend %wrapp;
         
         >.divider_line {
+            display                                       : -webkit-box;
+            display                                       : -ms-flexbox;
             display                                       : flex;
-            justify-content                               : space-between;
-            align-items                                   : center;
+            -webkit-box-pack                               : justify;
+                -ms-flex-pack                               : justify;
+                    justify-content                               : space-between;
+            -webkit-box-align                                   : center;
+                -ms-flex-align                                   : center;
+                    align-items                                   : center;
             div {
                 @extend %wrapp;
                 hr {
@@ -232,14 +238,21 @@ main div.menu_container {
         .divider {
             @extend %wrapp;
             font-size                                     : x-large;
+            display                                       : -webkit-box;
+            display                                       : -ms-flexbox;
             display                                       : flex;
-            justify-content                               : space-between;
-            align-items                                   : center;
+            -webkit-box-pack                               : justify;
+                -ms-flex-pack                               : justify;
+                    justify-content                               : space-between;
+            -webkit-box-align                                   : center;
+                -ms-flex-align                                   : center;
+                    align-items                                   : center;
 
             div.left_edge {
                 overflow                                  : hidden;
                 .arrow_left {
-
+                    display                               : -webkit-box;
+                    display                               : -ms-flexbox;
                     display                               : flex;
                     .triangle_1 {
                         border-top                        : 0.4vw solid $customised_azure2_color;
@@ -265,7 +278,8 @@ main div.menu_container {
             div.right_edge {
                 overflow                                  : hidden;
                 .arrow_right {
-
+                    display                               : -webkit-box;
+                    display                               : -ms-flexbox;
                     display                               : flex;
                     
                     .triangle_1 {

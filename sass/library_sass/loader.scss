@@ -1,12 +1,23 @@
 
 .circle-1 {
-    animation       : move 1s ease-in-out infinite;
+    -webkit-animation       : move 1s ease-in-out infinite;
+            animation       : move 1s ease-in-out infinite;
 }
 
 .circle-1a {
-    animation       : fade 1s ease-in-out infinite;
+    -webkit-animation       : fade 1s ease-in-out infinite;
+            animation       : fade 1s ease-in-out infinite;
 }
 
+@-webkit-keyframes fade {
+    0% {
+        opacity     : 0;
+    }
+
+    100% {
+        opacity     : 1;
+    }
+}
 @keyframes fade {
     0% {
         opacity     : 0;
@@ -16,18 +27,35 @@
         opacity     : 1;
     }
 }
-
 .circle-2 {
-    animation       : move 1s ease-in-out infinite;
+    -webkit-animation       : move 1s ease-in-out infinite;
+            animation       : move 1s ease-in-out infinite;
 }
 
-@keyframes move {
+@-webkit-keyframes move {
     0% {
-        transform   : translateX(0);
+        -webkit-transform   : translateX(0);
+            -ms-transform   : translateX(0);
+                transform   : translateX(0);
     }
 
     100% {
-        transform   : translateX(60px);
+        -webkit-transform   : translateX(60px);
+            -ms-transform   : translateX(60px);
+                transform   : translateX(60px);
+    }
+}
+@keyframes move {
+    0% {
+        -webkit-transform   : translateX(0);
+            -ms-transform   : translateX(0);
+                transform   : translateX(0);
+    }
+
+    100% {
+        -webkit-transform   : translateX(60px);
+            -ms-transform   : translateX(60px);
+                transform   : translateX(60px);
     }
 }
 
@@ -37,10 +65,19 @@
 }
 
 .circle-3 {
-    animation       : circle-3 1s ease-in-out infinite;
+    -webkit-animation       : circle-3 1s ease-in-out infinite;
+            animation       : circle-3 1s ease-in-out infinite;
     opacity         : 1;
 }
+@-webkit-keyframes circle-3 {
+    0% {
+        opacity     : 1;
+    }
 
+    100% {
+        opacity     : 0;
+    }
+}
 @keyframes circle-3 {
     0% {
         opacity     : 1;

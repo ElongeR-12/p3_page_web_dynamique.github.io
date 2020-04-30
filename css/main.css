@@ -45,32 +45,59 @@ header div {
 
 /*-----------------------------------------PAGE D'ACCEUIL--------------------------------------------*/
 .circle-1 {
+  -webkit-animation: move 1s ease-in-out infinite;
   animation: move 1s ease-in-out infinite; }
 
 .circle-1a {
+  -webkit-animation: fade 1s ease-in-out infinite;
   animation: fade 1s ease-in-out infinite; }
 
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 @keyframes fade {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
 .circle-2 {
+  -webkit-animation: move 1s ease-in-out infinite;
   animation: move 1s ease-in-out infinite; }
 
-@keyframes move {
+@-webkit-keyframes move {
   0% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
     transform: translateX(0); }
   100% {
+    -webkit-transform: translateX(60px);
+    -ms-transform: translateX(60px);
+    transform: translateX(60px); } }
+@keyframes move {
+  0% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
+  100% {
+    -webkit-transform: translateX(60px);
+    -ms-transform: translateX(60px);
     transform: translateX(60px); } }
 .circle-1a {
   margin-left: -55px;
   opacity: 0; }
 
 .circle-3 {
+  -webkit-animation: circle-3 1s ease-in-out infinite;
   animation: circle-3 1s ease-in-out infinite;
   opacity: 1; }
 
+@-webkit-keyframes circle-3 {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 @keyframes circle-3 {
   0% {
     opacity: 1; }
@@ -130,15 +157,29 @@ header div {
 
 .wiggle:hover {
   animation: wiggle 200ms infinite;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-animation: wiggle 200ms infinite; }
 
-@keyframes wiggle {
+@-webkit-keyframes wiggle {
   0% {
+    -webkit-transform: translate(2px, 0);
     transform: translate(2px, 0); }
   50% {
+    -webkit-transform: translate(-2px, 0);
     transform: translate(-2px, 0); }
   100% {
+    -webkit-transform: translate(2px, 0);
+    transform: translate(2px, 0); } }
+@keyframes wiggle {
+  0% {
+    -webkit-transform: translate(2px, 0);
+    transform: translate(2px, 0); }
+  50% {
+    -webkit-transform: translate(-2px, 0);
+    transform: translate(-2px, 0); }
+  100% {
+    -webkit-transform: translate(2px, 0);
     transform: translate(2px, 0); } }
 header div, footer, footer .footer_container, main, main .home_area .container .box_container, main div.menu_container .menu_area .item_1,
 main div.menu_container .menu_area .item_2,
@@ -244,6 +285,8 @@ main div.menu_container .menu_area .dessert .divider {
   overflow: hidden; }
 
 main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 40px;
   width: 100%;
@@ -277,10 +320,17 @@ main .home_area {
   main .home_area .container {
     text-align: center; }
     main .home_area .container .box_container div {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
       justify-content: center; }
       @media (max-width: 575.98px) {
         main .home_area .container .box_container div {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
           flex-direction: column; } }
       main .home_area .container .box_container div .box {
         height: 765px;
@@ -311,6 +361,9 @@ main .home_area {
             margin-left: auto;
             margin-right: auto; } }
         main .home_area .container .box_container div .box .box_info {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
           flex-direction: column;
           padding-top: 50%;
           margin: 0 auto;
@@ -347,6 +400,8 @@ main .home_area {
         background-color: #ffcccc;
         font-size: 3vw; }
         main .home_area .container .box_container div .box_color1 .box_info .fa-music {
+          background: -webkit-gradient(linear, left top, right top, from(#ff6666), to(#ff9966));
+          background: -o-linear-gradient(left, #ff6666 0%, #ff9966 100%);
           background: linear-gradient(to right, #ff6666 0%, #ff9966 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; }
@@ -358,6 +413,8 @@ main .home_area {
         background-color: #f5d9d961;
         font-size: 3vw; }
         main .home_area .container .box_container div .box_color2 .box_info .info_2 {
+          background: -webkit-gradient(linear, left top, right top, from(#cc9933), to(#330867));
+          background: -o-linear-gradient(left, #cc9933 0%, #330867 100%);
           background: linear-gradient(to right, #cc9933 0%, #330867 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; }
@@ -368,6 +425,8 @@ main .home_area {
         background-color: #a39f9f1f;
         font-size: 3vw; }
         main .home_area .container .box_container div .box_color3 .box_info .info_3 {
+          background: -webkit-gradient(linear, left top, right top, from(#0033cc), to(#99ccff));
+          background: -o-linear-gradient(left, #0033cc 0%, #99ccff 100%);
           background: linear-gradient(to right, #0033cc 0%, #99ccff 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; }
@@ -378,6 +437,8 @@ main .home_area {
         background-color: #a39f9f08;
         font-size: 3vw; }
         main .home_area .container .box_container div .box_color4 .box_info .info_4 {
+          background: -webkit-gradient(linear, left top, right top, from(#339933), to(#ccff66));
+          background: -o-linear-gradient(left, #339933 0%, #ccff66 100%);
           background: linear-gradient(to right, #339933 0%, #ccff66 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent; }
@@ -412,6 +473,8 @@ main .home_area {
       -o-border-radius: 20px;
       font-size: 3.5vw;
       font-weight: bold;
+      -webkit-transition: 1.5s;
+      -o-transition: 1.5s;
       transition: 1.5s;
       transition: 1.5s;
       -webkit-transition: 1.5s;
@@ -454,15 +517,29 @@ main .home_area {
 
 .wiggle:hover {
   animation: wiggle 200ms infinite;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-animation: wiggle 200ms infinite; }
 
-@keyframes wiggle {
+@-webkit-keyframes wiggle {
   0% {
+    -webkit-transform: translate(2px, 0);
     transform: translate(2px, 0); }
   50% {
+    -webkit-transform: translate(-2px, 0);
     transform: translate(-2px, 0); }
   100% {
+    -webkit-transform: translate(2px, 0);
+    transform: translate(2px, 0); } }
+@keyframes wiggle {
+  0% {
+    -webkit-transform: translate(2px, 0);
+    transform: translate(2px, 0); }
+  50% {
+    -webkit-transform: translate(-2px, 0);
+    transform: translate(-2px, 0); }
+  100% {
+    -webkit-transform: translate(2px, 0);
     transform: translate(2px, 0); } }
 header div, footer, footer .footer_container, main, main .home_area .container .box_container, main div.menu_container .menu_area .item_1,
 main div.menu_container .menu_area .item_2,
@@ -605,15 +682,29 @@ header div {
 
 .wiggle:hover {
   animation: wiggle 200ms infinite;
+  -webkit-animation-timing-function: linear;
   animation-timing-function: linear;
   -webkit-animation: wiggle 200ms infinite; }
 
-@keyframes wiggle {
+@-webkit-keyframes wiggle {
   0% {
+    -webkit-transform: translate(2px, 0);
     transform: translate(2px, 0); }
   50% {
+    -webkit-transform: translate(-2px, 0);
     transform: translate(-2px, 0); }
   100% {
+    -webkit-transform: translate(2px, 0);
+    transform: translate(2px, 0); } }
+@keyframes wiggle {
+  0% {
+    -webkit-transform: translate(2px, 0);
+    transform: translate(2px, 0); }
+  50% {
+    -webkit-transform: translate(-2px, 0);
+    transform: translate(-2px, 0); }
+  100% {
+    -webkit-transform: translate(2px, 0);
     transform: translate(2px, 0); } }
 header div, footer, footer .footer_container, main, main .home_area .container .box_container, main div.menu_container .menu_area .item_1,
 main div.menu_container .menu_area .item_2,
@@ -712,6 +803,8 @@ p.center_text:before {
   bottom: 0;
   left: 0;
   visibility: hidden;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
 p.center_text:hover:before {
@@ -774,6 +867,8 @@ main div.menu_container {
   main div.menu_container .note_ench {
     font-family: "Pacifico", cursive; }
     main div.menu_container .note_ench .menu_title .fa-music {
+      background: -webkit-gradient(linear, left top, right top, from(#ffcccc), to(#ff9966));
+      background: -o-linear-gradient(left, #ffcccc 0%, #ff9966 100%);
       background: linear-gradient(to right, #ffcccc 0%, #ff9966 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -782,6 +877,8 @@ main div.menu_container {
     font-family: "Lobster", cursive;
     background-color: #fdf1f7; }
     main div.menu_container .chic_fr .info_2 {
+      background: -webkit-gradient(linear, left top, right top, from(#cc9933), to(#330867));
+      background: -o-linear-gradient(left, #cc9933 0%, #330867 100%);
       background: linear-gradient(to right, #cc9933 0%, #330867 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
@@ -789,6 +886,8 @@ main div.menu_container {
     font-family: "Dancing Script", cursive;
     background-color: #b6b3c438; }
     main div.menu_container .delice_pap .info_3 {
+      background: -webkit-gradient(linear, left top, right top, from(#0033cc), to(#99ccff));
+      background: -o-linear-gradient(left, #0033cc 0%, #99ccff 100%);
       background: linear-gradient(to right, #0033cc 0%, #99ccff 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
@@ -797,6 +896,8 @@ main div.menu_container {
     font-size: larger;
     background-color: #b6b3c438; }
     main div.menu_container .palette_gout .info_4 {
+      background: -webkit-gradient(linear, left top, right top, from(#339933), to(#ccff66));
+      background: -o-linear-gradient(left, #339933 0%, #ccff66 100%);
       background: linear-gradient(to right, #339933 0%, #ccff66 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
@@ -819,6 +920,8 @@ main div.menu_container {
   main div.menu_container .below_title .info_1 {
     display: inline; }
   main div.menu_container .below_title .fas {
+    background: -webkit-gradient(linear, left top, right top, from(#ff6666), to(#ff9966));
+    background: -o-linear-gradient(left, #ff6666 0%, #ff9966 100%);
     background: linear-gradient(to right, #ff6666 0%, #ff9966 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
@@ -826,8 +929,14 @@ main div.menu_container {
   main div.menu_container .menu_area .item_2 > .divider_line,
   main div.menu_container .menu_area .item_3 > .divider_line,
   main div.menu_container .menu_area .dessert > .divider_line {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center; }
     main div.menu_container .menu_area .item_1 > .divider_line div hr,
     main div.menu_container .menu_area .item_2 > .divider_line div hr,
@@ -959,8 +1068,14 @@ main div.menu_container {
   main div.menu_container .menu_area .item_3 .divider,
   main div.menu_container .menu_area .dessert .divider {
     font-size: x-large;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center; }
     main div.menu_container .menu_area .item_1 .divider div.left_edge,
     main div.menu_container .menu_area .item_2 .divider div.left_edge,
@@ -971,6 +1086,8 @@ main div.menu_container {
       main div.menu_container .menu_area .item_2 .divider div.left_edge .arrow_left,
       main div.menu_container .menu_area .item_3 .divider div.left_edge .arrow_left,
       main div.menu_container .menu_area .dessert .divider div.left_edge .arrow_left {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex; }
         main div.menu_container .menu_area .item_1 .divider div.left_edge .arrow_left .triangle_1,
         main div.menu_container .menu_area .item_2 .divider div.left_edge .arrow_left .triangle_1,
@@ -1001,6 +1118,8 @@ main div.menu_container {
       main div.menu_container .menu_area .item_2 .divider div.right_edge .arrow_right,
       main div.menu_container .menu_area .item_3 .divider div.right_edge .arrow_right,
       main div.menu_container .menu_area .dessert .divider div.right_edge .arrow_right {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex; }
         main div.menu_container .menu_area .item_1 .divider div.right_edge .arrow_right .triangle_1,
         main div.menu_container .menu_area .item_2 .divider div.right_edge .arrow_right .triangle_1,
