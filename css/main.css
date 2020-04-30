@@ -221,19 +221,10 @@ footer {
         -o-border-radius: 5px;
         font-style: normal;
         text-decoration: none;
-        font-size: 50px;
+        font-size: 1em;
         font-weight: bold;
         float: left;
         padding-left: 30px; }
-        @media (max-width: 991.98px) {
-          footer .footer_container div:first-child a {
-            font-size: 40px; } }
-        @media (max-width: 767.98px) {
-          footer .footer_container div:first-child a {
-            font-size: 30px; } }
-        @media (max-width: 575.98px) {
-          footer .footer_container div:first-child a {
-            font-size: 20px; } }
         footer .footer_container div:first-child a:hover {
           color: white; }
     footer .footer_container div:last-child {
@@ -251,19 +242,10 @@ footer {
         -o-border-radius: 5px;
         font-style: normal;
         text-decoration: none;
-        font-size: 50px;
+        font-size: 1em;
         font-weight: bold;
         float: right;
         padding-right: 30px; }
-        @media (max-width: 991.98px) {
-          footer .footer_container div:last-child a {
-            font-size: 40px; } }
-        @media (max-width: 767.98px) {
-          footer .footer_container div:last-child a {
-            font-size: 30px; } }
-        @media (max-width: 575.98px) {
-          footer .footer_container div:last-child a {
-            font-size: 20px; } }
         footer .footer_container div:last-child a:hover {
           color: white; }
 
@@ -581,19 +563,10 @@ footer {
         -o-border-radius: 5px;
         font-style: normal;
         text-decoration: none;
-        font-size: 50px;
+        font-size: 1em;
         font-weight: bold;
         float: left;
         padding-left: 30px; }
-        @media (max-width: 991.98px) {
-          footer .footer_container div:first-child a {
-            font-size: 40px; } }
-        @media (max-width: 767.98px) {
-          footer .footer_container div:first-child a {
-            font-size: 30px; } }
-        @media (max-width: 575.98px) {
-          footer .footer_container div:first-child a {
-            font-size: 20px; } }
         footer .footer_container div:first-child a:hover {
           color: white; }
     footer .footer_container div:last-child {
@@ -611,19 +584,10 @@ footer {
         -o-border-radius: 5px;
         font-style: normal;
         text-decoration: none;
-        font-size: 50px;
+        font-size: 1em;
         font-weight: bold;
         float: right;
         padding-right: 30px; }
-        @media (max-width: 991.98px) {
-          footer .footer_container div:last-child a {
-            font-size: 40px; } }
-        @media (max-width: 767.98px) {
-          footer .footer_container div:last-child a {
-            font-size: 30px; } }
-        @media (max-width: 575.98px) {
-          footer .footer_container div:last-child a {
-            font-size: 20px; } }
         footer .footer_container div:last-child a:hover {
           color: white; }
 
@@ -746,19 +710,10 @@ footer {
         -o-border-radius: 5px;
         font-style: normal;
         text-decoration: none;
-        font-size: 50px;
+        font-size: 1em;
         font-weight: bold;
         float: left;
         padding-left: 30px; }
-        @media (max-width: 991.98px) {
-          footer .footer_container div:first-child a {
-            font-size: 40px; } }
-        @media (max-width: 767.98px) {
-          footer .footer_container div:first-child a {
-            font-size: 30px; } }
-        @media (max-width: 575.98px) {
-          footer .footer_container div:first-child a {
-            font-size: 20px; } }
         footer .footer_container div:first-child a:hover {
           color: white; }
     footer .footer_container div:last-child {
@@ -776,19 +731,10 @@ footer {
         -o-border-radius: 5px;
         font-style: normal;
         text-decoration: none;
-        font-size: 50px;
+        font-size: 1em;
         font-weight: bold;
         float: right;
         padding-right: 30px; }
-        @media (max-width: 991.98px) {
-          footer .footer_container div:last-child a {
-            font-size: 40px; } }
-        @media (max-width: 767.98px) {
-          footer .footer_container div:last-child a {
-            font-size: 30px; } }
-        @media (max-width: 575.98px) {
-          footer .footer_container div:last-child a {
-            font-size: 20px; } }
         footer .footer_container div:last-child a:hover {
           color: white; }
 
