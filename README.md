@@ -5,3 +5,8 @@ Dans ce projet je vais montrer par étape mes démarches pour réaliser un site 
 HTML, CSS
 
 # Sommaire 
+* Intégration HTML5 & CSS3
+* Ajouter des animations
+* Utilisation de SASS
+* Adaptation responsive du site
+
