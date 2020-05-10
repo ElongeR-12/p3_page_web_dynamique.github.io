@@ -10,3 +10,6 @@ HTML, CSS
 * Utilisation de SASS
 * Adaptation responsive du site
 
+# Demo
+
+![](./images/demonstration.gif)
